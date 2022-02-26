@@ -1,62 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <title>Max’s Web Type Class Site</title>
-  <link rel="stylesheet" type="text/css" href="style.css"> </link>
-  <!-- this is where my meta-info lives, but won’t show up on the page itself-->
-</head>
-<body>
-  <!-- this is where all my webpage stuff should go-->
-  <section id="container">
+  <head>
+    <meta charset="utf-8" />
+    <title>Max’s Web Type Class Site</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> </link>
+    <!-- this is where my meta-info lives, but won’t show up on the page itself-->
+  </head>
+  
+  <body>
+    <!-- this is where all my webpage stuff should go-->
+    <section id="container">
 
-    <!-- about me-->
-    <section>
-      <h1>Max Mainio Beidler</h1> 
-      <div class="event">
-        <h2>Max Mainio Beidler</h2> 
-        <h3>Max Mainio Beidler</h3> 
-        <h4>Max Mainio Beidler</h4> 
-        <h5>Max Mainio Beidler</h5> 
-        <h6>Max Mainio Beidler</h6> 
-      </div>
-    </section>
+      <!-- about me-->
+      <section>
+        <h1>Max Mainio Beidler</h1> 
+        <div class="event">
+          <h2>Max Mainio Beidler</h2> 
+          <h3>Max Mainio Beidler</h3> 
+          <h4>Max Mainio Beidler</h4> 
+          <h5>Max Mainio Beidler</h5> 
+          <h6>Max Mainio Beidler</h6> 
+        </div>
+      </section>
 
-    <p class="desc">
-      My name is; as stated above, Max Mainio Beidler. I am a junior in Graphic design at the blahblahblahablahalblahlablhalblah...
-    </p>
-
-    <section>
-      <a href="https://randomtextgenerator.com/">
-        Random Text Generator
-      </a>
-
-      <p class="special">
-        "Add you viewing ten equally believe put. Separate families my on drawings do oh offended strictly elegance. Perceive jointure be mistress by jennings properly. An admiration at he discovered difficulty continuing. We in building removing possible suitable friendly on. Nay middleton him admitting consulted and behaviour son household. Recurred advanced he oh together entrance speedily suitable. Ready tried gay state fat could boy its among shall."
-      </p  class="special">
-
-      <p>
-        "Another journey chamber way yet females man. Way extensive and dejection get delivered deficient sincerity gentleman age. Too end instrument possession contrasted motionless. Calling offence six joy feeling. Coming merits and was talent enough far. Sir joy northward sportsmen education. Discovery incommode earnestly no he commanded if. Put still any about manor heard."
+      <p class="desc">
+        My name is; as stated above, Max Mainio Beidler. I am a junior in Graphic design at the blahblahblahablahalblahlablhalblah...
       </p>
-    </section>
+
+      <section>
+        <a href="https://randomtextgenerator.com/">
+          Random Text Generator
+        </a>
+
+        <p class="special">
+          "Add you viewing ten equally believe put. Separate families my on drawings do oh offended strictly elegance. Perceive jointure be mistress by jennings properly. An admiration at he discovered difficulty continuing. We in building removing possible suitable friendly on. Nay middleton him admitting consulted and behaviour son household. Recurred advanced he oh together entrance speedily suitable. Ready tried gay state fat could boy its among shall."
+        </p  class="special">
+
+        <p>
+          "Another journey chamber way yet females man. Way extensive and dejection get delivered deficient sincerity gentleman age. Too end instrument possession contrasted motionless. Calling offence six joy feeling. Coming merits and was talent enough far. Sir joy northward sportsmen education. Discovery incommode earnestly no he commanded if. Put still any about manor heard."
+        </p>
+      </section>
+      
+      <!-- links to my work -->
+      <div id="exercises">
+        <h3>Exercises</h3>
+
+        <ul>
+          <li><a href="#">EX 1</a></li>
+        </ul> 
+      </div>
     
-    <!-- links to my work -->
-    <div id="exercises">
-      <h3>Exercises</h3>
+      <div id="projects">
+        <h3>Projects</h3>
 
-      <ul>
-        <li><a href="#">EX 1</a></li>
-      </ul> 
-    </div>
-   
-    <div id="projects">
-      <h3>Projects</h3>
+        <ul>
+          <li><a href="#">P1</a></li>
+        </ul>
+      </div>
 
-      <ul>
-        <li><a href="#">P1</a></li>
-      </ul>
-    </div>
+      <!-- Eye test v2-->
+      <div class="emoji-eye">
+        <img class="img-emoji-eye-base" src="assets/Smooth Base.png" alt="emoji eye base">
+        <div class="emoji-iris">
+          <img class="img-emoji-iris" src="assets/Iris.png" alt="emoji iris">
+          <div class="emoji-eye-lid">
+            <img class="img-emoji-eye-lid" src="assets/Eye Lid.png" alt="emoji eye lid">
+          </div>
+        </div>
+      </div>
 
-  </section>
-</body>
+      <script>
+        var iris = document.getElementsByClassName("img-emoji-iris");
+        document.onmousemove = function(){
+          var x = event.clientX * 100/window.innerWidth + "%";
+          var y = event.clientY * 100/window.innerHeight + "%";
+          //event.clientX => get the horizontal coordinate of the onmousemove
+          //event.clientY => get the verticle coordinate of the onmousemove
+          //window.innerWidth => get the browser width
+          //window.innerHeight => get the browser height
+
+          for(var i=0;i<2;i++){
+            iris[i].style.left = x;
+            iris[i].style.top = y;
+            iris[i].style.transform = "translate(-"+x+", -"+y+")";
+          }
+        }
+      </script>
+
+    </section>
+  </body>
 </html>

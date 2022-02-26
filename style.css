@@ -1,24 +1,38 @@
-h1{
-    color: rgb(0, 255, 0);
-    border: 1px solid;
-    padding: 20px;
+body{
+    margin: 24px;
+    padding: 0;
+    background: blue;
 }
 
-h2{
-    margin-top: 2em;
-    margin-bottom: 2rem;
+.eyes{
+    position: absolute;
+    left: 50%;
+    transform: translate(-120px);
+    width: 100%;
+    text-align: center;
 }
 
-p{
-    color: rgb(255, 0, 0);
-    margin-top: 8px;
-    margin-bottom: 8px;
+.eye{
+    width: 240px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
 }
 
-.special{
-    color: rgb(0, 0, 255);
+.ball{
+    width: 40px;
+    height: 40px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 15px solid gray;
 }
 
-.event{
-    border: 2px solid;
+.emoji-eye-base{
+    width: 40px;
 }
