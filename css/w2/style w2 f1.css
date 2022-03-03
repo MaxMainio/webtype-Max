@@ -44,55 +44,6 @@ ol{
     margin-bottom: 10px;
 }
 
-a{
-    font-size: 12pt;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.emoji-eye{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 240px;
-    height: 182.5px;
-    transform: translateX(-120px);
-}
-
-.img-emoji-eye-base{
-    position: absolute;
-    width: 240px;
-}
-
-.emoji-iris{
-    position: fixed;
-    left: 50%;
-    width: 240px;
-    height: 182.5px;
-    transform: translateX(-120px);
-}
-
-.img-emoji-iris{
-    position: absolute;
-    width: 125px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.emoji-eye-lid{
-    position: absolute;
-    width: 240px;
-    height: 182.5px;
-}
-
-.img-emoji-eye-lid{
-    position: absolute;
-    width: 240px;
-}
-
 article{
     max-width: 40em;
 	margin: auto;
@@ -100,20 +51,6 @@ article{
 
 .img{
     width: 100%;
-}
-
-.listed{
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-.weeks{
-    margin-left: 32px;
-}
-
-.flex1{
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 .flex-funny{
