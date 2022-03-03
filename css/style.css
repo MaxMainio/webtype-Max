@@ -94,6 +94,19 @@ a{
 }
 
 article{
-    max-width: 40em; /*restrict to 40chars per line*/
+    max-width: 40em;
 	margin: auto;
+}
+
+.img{
+    width: 100%;
+}
+
+.listed{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.weeks{
+    margin-left: 32px;
 }
