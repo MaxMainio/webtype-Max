@@ -1,0 +1,68 @@
+body{
+    margin: 24px;
+    padding: 0;
+    background: white;
+}
+
+h1{
+    font-size: 24pt;
+    font-family: proxima-nova, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+h3{
+    font-size: 16pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+ol{
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.img{
+    width: 100%;
+    display: block;
+}
+
+.content{
+    overflow: scroll;
+    height: 95vh;
+    display: block;
+    margin-bottom: 0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 8px;
+}
+
+.column1{
+    height: 100%;
+}
