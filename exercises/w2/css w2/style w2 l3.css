@@ -52,14 +52,15 @@ ol{
 
 .content{
     overflow: scroll;
-    height: 100vh;
+    height: 95vh;
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 0px;
 }
 
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border: 8px;
 }
 
 .column1{
