@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    margin-top: 16px;
+}
+
+body{
+    margin-top: 0px;
+    background-color: rgb(242, 242, 242);
+}
+
+.curtains{
+    width: 100%;
+    height: 16px;
+    margin-top: -15px;
+}
+
+.rod{
+    width: 100%;
+    height: 16px;
+    position: fixed;
+}
+
+.curtain-left{
+    width: auto;
+    height: 100%;
+    position: fixed;
+    left: -60px;
+    transform: translate(0px, -20px);
+}
+
+.curtain-right{
+    width: auto;
+    height: 100%;
+    position: fixed;
+    right: -60px;
+    transform: translate(0px, -20px);
+}
+
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main{
+    background-color: rgb(242, 242, 242);
+    width: 1600px;
+    margin-top: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.columns{
+    background-color: #d82f1f;
+    width: 300px;
+    height: 1200px;
+    margin-top: -34px;
+}
+
+.left-column{
+    padding-top: 40px;
+    margin-left: 24px;
+    margin-right: 16px;
+}
+
+.right-column{
+    padding-top: 40px;
+    margin-left: 16px;
+    margin-right: 24px;
+}
+
+.header{
+    margin-top: 0px;
+}
+
+.introduction{
+    padding-left: 33%;
+}
+
+.history{
+    padding-right: 33%;
+}
+
+h1{
+    font-family: new-order, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 36pt;
+    color: #d82f1f;
+
+    margin-top: 0px;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight:lighter;
+    font-size: 16pt;
+
+    margin-top: 0px;
+}
+
+h3{
+    font-family: new-order, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 14pt;
+    color: #d82f1f;
+
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+
+    margin-top: 0px;
+}
