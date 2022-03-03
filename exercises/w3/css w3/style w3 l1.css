@@ -45,10 +45,16 @@ ol{
 }
 
 article{
-    max-width: 40em;
+    max-width: 800px;
 	margin: auto;
 }
 
 .img{
     width: 100%;
+}
+
+@media screen and (max-width: 1050px){
+    article{
+        max-width: 80%;
+    }
 }
