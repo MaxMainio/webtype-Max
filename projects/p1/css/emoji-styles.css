@@ -154,3 +154,36 @@ a{
 .quote{
     font-style: italic;
 }
+
+
+/* Queries */
+
+@media screen and (max-width: 1600px){
+    .curtain-left{
+        left: -55px;
+    }
+
+    .curtain-right{
+        right: -55px;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .curtain-left{
+        left: -90px;
+    }
+
+    .curtain-right{
+        right: -90px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .curtain-left{
+        left: -120px;
+    }
+
+    .curtain-right{
+        right: -120px;
+    }
+}
