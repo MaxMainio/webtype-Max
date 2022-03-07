@@ -27,7 +27,7 @@ body{
     width: auto;
     height: 100%;
     position: fixed;
-    left: -20px;
+    left: -25px;
     transform: translate(0px, -20px);
 }
 
@@ -35,7 +35,7 @@ body{
     width: auto;
     height: 100%;
     position: fixed;
-    right: -20px;
+    right: -25px;
     transform: translate(0px, -20px);
 }
 
@@ -83,12 +83,19 @@ body{
     margin-top: 0px;
 }
 
+
+/* Content */
+
 .introduction{
     padding-left: 33%;
 }
 
 .history{
     padding-right: 33%;
+}
+
+.today{
+    padding-left: 33%;
 }
 
 
@@ -131,8 +138,18 @@ p{
     font-size: 12pt;
     margin-top: 0px;
     text-indent: 32px;
+    line-height: 15pt;
+}
+
+a{
+    text-decoration: none;
+    color: #d82f1f;
 }
 
 .first-line{
     text-indent: 0px;
+}
+
+.quote{
+    font-style: italic;
 }
