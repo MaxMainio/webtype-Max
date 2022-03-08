@@ -3,6 +3,10 @@ article{
 	margin: auto;
 }
 
+h4{
+    margin-bottom: 10px;
+}
+
 .content{
     max-width: 40em;
 }
