@@ -187,3 +187,32 @@ a{
         right: -120px;
     }
 }
+
+@media screen and (max-width: 1170px){
+    .curtain-left{
+        left: -125px;
+    }
+
+    .curtain-right{
+        right: -125px;
+    }
+
+    h1{
+        font-size: 30pt;
+    }
+
+    h2{
+        font-size: 14pt;
+    }
+
+    h3{
+        font-size: 12pt;
+
+        margin-bottom: 4px;
+    }
+
+    p{
+        font-size: 10pt;
+        line-height: 13pt;
+    }
+}
