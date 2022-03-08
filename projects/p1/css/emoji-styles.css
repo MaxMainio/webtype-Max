@@ -216,3 +216,13 @@ a{
         line-height: 13pt;
     }
 }
+
+@media screen and (max-width: 1000px){
+    .curtain-left{
+        left: -155px;
+    }
+
+    .curtain-right{
+        right: -155px;
+    }
+}
