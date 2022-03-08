@@ -65,14 +65,14 @@ body{
 
 .left-column{
     padding-top: 54px;
-    margin-left: 16px;
+    margin-left: 60px;
     margin-right: 16px;
 }
 
 .right-column{
     padding-top: 0px;
     margin-left: 16px;
-    margin-right: 16px;
+    margin-right: 60px;
 }
 
 .header{
@@ -159,6 +159,14 @@ a{
 /* Queries */
 
 @media screen and (max-width: 1600px){
+    .right-column{
+        margin-right: 30px;
+    }
+
+    .left-column{
+        margin-left: 30px;
+    }
+
     .curtain-left{
         left: -55px;
     }
@@ -169,6 +177,14 @@ a{
 }
 
 @media screen and (max-width: 1400px){
+    .right-column{
+        margin-right: 16px;
+    }
+
+    .left-column{
+        margin-left: 16px;
+    }
+
     .curtain-left{
         left: -90px;
     }
