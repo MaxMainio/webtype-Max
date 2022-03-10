@@ -329,6 +329,14 @@ a{
     .today{
         padding-left: 0;
     }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 830px){
