@@ -72,11 +72,8 @@ a{
 .listed{
     display: flex;
     flex-wrap: nowrap;
+    gap: 32px;
     margin-top: -10px;
-}
-
-.weeks{
-    margin-left: 32px;
 }
 
 .second{
