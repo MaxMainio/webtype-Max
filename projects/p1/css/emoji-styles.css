@@ -339,8 +339,26 @@ a{
     }
 }
 
-@media (max-width: 830px){
-    
+@media (max-width: 900px){
+    .curtain-right{
+        right: -9.5%;
+    }
+}
+
+@media (max-width: 800px){
+    .curtain-right{
+        right: -14%;
+    }
+}
+
+@media (max-width: 720px){
+    .curtain-right{
+        right: -18%;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
 }
 
 
