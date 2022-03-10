@@ -331,3 +331,21 @@ a{
 
 
 /* mobile */
+
+@media screen and (max-width: 500px){
+    .curtain-right{
+        right: -250px;
+    }
+
+    .mobile-column-content{
+        display: none;
+    }
+
+    .main{
+        width: 400px;
+    }
+
+    .right-column{
+        width: 60px;
+    }
+}
