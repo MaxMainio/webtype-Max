@@ -259,6 +259,9 @@ a{
     }
 }
 
+
+/* tablet */
+
 @media screen and (min-width: 1000px){
     .mobile-column-content{
         display: none;
@@ -295,3 +298,36 @@ a{
         margin-bottom: 16px;
     }
 }
+
+@media screen and (max-width: 830px){
+    .curtain-right{
+        right: -65px;
+    }
+
+    .main{
+        width: 600px;
+    }
+
+    .header{
+        padding-top: 10px;
+    }
+
+    .introduction{
+        padding-left: 0px;
+    }
+
+    .history{
+        padding-right: 0px;
+    }
+
+    .today{
+        padding-left: 0px;
+    }
+
+    h1{
+        font-size: 16pt;
+    }
+}
+
+
+/* mobile */
