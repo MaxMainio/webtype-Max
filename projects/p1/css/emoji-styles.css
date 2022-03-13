@@ -348,7 +348,7 @@ a{
 
     .rod{
         margin-top: 24px;
-        height: 32px;
+        height: 64px;
     }
 
     .grid{
@@ -445,13 +445,11 @@ a{
 
     .grid{
         grid-template-columns: 6fr 1fr;
-    
         max-width: calc(667px * 2px);
     }
 
     .curtain-right{
         height: calc(667px * 2px);
-
         right: -380px;
     }
 
