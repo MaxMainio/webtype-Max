@@ -306,6 +306,7 @@ a{
     and (-webkit-device-pixel-ratio : 3) { 
 
     .curtain-right{
+        height: 812px;
         right: -100px;
     }
 }
