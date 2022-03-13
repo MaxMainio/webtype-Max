@@ -294,18 +294,28 @@ a{
 /* Mobile Queries */
 
 @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
+    and (device-width : 390px) 
+    and (device-height : 844px) 
     and (-webkit-device-pixel-ratio : 3){
 
     .grid{
         grid-template-columns: 5fr 1fr;
     
-        max-width: 375px;
+        max-width: 390*3px;
+    }
+
+    .rod{
+        height: 32px;
+
+        margin-top: 32px;
     }
 
     .curtain-right{
-        height: 812px;
-        right: -100px;
+        height: 844*3px;
+        right: -475px;
+    }
+
+    .main{
+        padding: 80px 32px;
     }
 }
