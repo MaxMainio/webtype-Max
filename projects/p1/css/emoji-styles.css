@@ -296,7 +296,13 @@ a{
 @media only screen 
     and (device-width : 375px) 
     and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
+    and (-webkit-device-pixel-ratio : 3){
+
+    .grid{
+        grid-template-columns: 5fr 1fr;
+    
+        max-width: 375px;
+    }
 
     .curtain-right{
         height: 812px;
