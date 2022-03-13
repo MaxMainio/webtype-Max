@@ -327,6 +327,11 @@ a{
     and (device-height : 896px) 
     and (-webkit-device-pixel-ratio : 2){
 
+    .rod{
+        margin-top: 24px;
+        height: 32px;
+    }
+
     .grid{
         grid-template-columns: 6fr 1fr;
     
@@ -338,6 +343,10 @@ a{
 
         right: -495px;
     }
+
+    .main{
+        padding: 80px 32px;
+    }
 }
 
 /* iPhone X */
@@ -345,6 +354,11 @@ a{
     and (device-width : 375px) 
     and (device-height : 812px) 
     and (-webkit-device-pixel-ratio : 3){
+
+    .rod{
+        margin-top: 24px;
+        height: 32px;
+    }
 
     .grid{
         grid-template-columns: 6fr 1fr;
@@ -357,6 +371,10 @@ a{
 
         right: -380px;
     }
+
+    .main{
+        padding: 80px 32px;
+    }
 }
 
 /* iPhone SE */
@@ -364,6 +382,11 @@ a{
     and (device-width : 375px) 
     and (device-height : 667px) 
     and (-webkit-device-pixel-ratio : 2){
+
+    .rod{
+        margin-top: 24px;
+        height: 32px;
+    }
 
     .grid{
         grid-template-columns: 6fr 1fr;
@@ -375,5 +398,9 @@ a{
         height: calc(667px * 2px);
 
         right: -380px;
+    }
+
+    .main{
+        padding: 80px 32px;
     }
 }
