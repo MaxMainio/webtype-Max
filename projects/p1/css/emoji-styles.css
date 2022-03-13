@@ -340,7 +340,7 @@ a{
     }
 }
 
-/* iPhone XR*/
+/* iPhone XR */
 @media only screen 
     and (device-width : 414px) 
     and (device-height : 896px) 
@@ -457,5 +457,24 @@ a{
 
     .main{
         padding: 80px 32px;
+    }
+
+    h1{
+        font-size: 5rem;
+    }
+
+    h2{
+        font-size: 2.2rem;
+    }
+
+    h3{
+        font-size: 3rem;
+
+        margin-bottom: 4px;
+    }
+
+    p{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
     }
 }
