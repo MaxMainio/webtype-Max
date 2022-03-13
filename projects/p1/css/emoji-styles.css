@@ -321,6 +321,25 @@ a{
     }
 }
 
+/* iPhone XR */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2){
+
+    .grid{
+        grid-template-columns: 6fr 1fr;
+    
+        max-width: calc(414px * 3px);
+    }
+
+    .curtain-right{
+        height: calc(896px * 3px);
+
+        right: -495px;
+    }
+}
+
 /* iPhone X */
 @media only screen 
     and (device-width : 375px) 
