@@ -293,6 +293,7 @@ a{
 
 /* Mobile Queries */
 
+/* iPhone 12 pro */
 @media only screen 
     and (device-width : 390px) 
     and (device-height : 844px) 
@@ -301,7 +302,7 @@ a{
     .grid{
         grid-template-columns: 5fr 1fr;
     
-        max-width: 390*3px;
+        max-width: calc(390px * 3px);
     }
 
     .rod{
@@ -311,11 +312,30 @@ a{
     }
 
     .curtain-right{
-        height: 844*3px;
+        height: calc(844px * 3px);
         right: -475px;
     }
 
     .main{
         padding: 80px 32px;
+    }
+}
+
+/* iPhone SE */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2){
+
+    .grid{
+        grid-template-columns: 6fr 1fr;
+    
+        max-width: calc(667px * 2px);
+    }
+
+    .curtain-right{
+        height: calc(667px * 2px);
+
+        right: -380px;
     }
 }
