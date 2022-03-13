@@ -348,7 +348,7 @@ a{
 
     .rod{
         margin-top: 24px;
-        height: 64px;
+        height: 32px;
     }
 
     .grid{
@@ -371,7 +371,7 @@ a{
     }
 
     h2{
-        font-size: 2.2rem;
+        font-size: 2.4rem;
     }
 
     h3{
@@ -381,8 +381,8 @@ a{
     }
 
     p{
-        font-size: 1.8rem;
-        line-height: 2.2rem;
+        font-size: 2.2rem;
+        line-height: 2.6rem;
     }
 }
 
