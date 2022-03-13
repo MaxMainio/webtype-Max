@@ -321,6 +321,25 @@ a{
     }
 }
 
+/* iPhone X */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3){
+
+    .grid{
+        grid-template-columns: 6fr 1fr;
+    
+        max-width: calc(667px * 3px);
+    }
+
+    .curtain-right{
+        height: calc(667px * 3px);
+
+        right: -380px;
+    }
+}
+
 /* iPhone SE */
 @media only screen 
     and (device-width : 375px) 
