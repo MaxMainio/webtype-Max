@@ -274,10 +274,6 @@ a{
     .left-column-content{
         display: none;
     }
-
-    .content-mottos{
-        display: none;
-    }
 }
 
 @media (max-height: 300px) {
@@ -300,17 +296,16 @@ a{
 
     .grid{
         grid-template-columns: 6fr 1fr;
-    
         max-width: calc(390px * 3px);
     }
 
     .rod{
         height: 32px;
-
         margin-top: 32px;
     }
 
     .curtain-right{
+        display: none;
         height: calc(844px * 3px);
         right: -495px;
     }
@@ -402,9 +397,7 @@ a{
 
     .curtain-right{
         display: none;
-
         height: calc(667px * 3px);
-
         right: -380px;
     }
 
