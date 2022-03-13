@@ -296,7 +296,7 @@ a{
 /* iPhone 12 pro */
 @media only screen 
     and (device-width : 390px) 
-    and (device-height : 844px) 
+    and (device-height : 844px){
 
     .grid{
         grid-template-columns: 6fr 1fr;
