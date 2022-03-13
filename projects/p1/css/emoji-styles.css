@@ -46,7 +46,7 @@ body{
     left: -0.5%;
 
     transition:ease-in-out;
-    transition-property: transform;
+    transition-property: left;
     transition-duration: 500ms;
 }
 
@@ -58,7 +58,7 @@ body{
     right: -0.5%;
 
     transition:ease-in-out;
-    transition-property: transform;
+    transition-property: right;
     transition-duration: 500ms;
 }
 
@@ -199,25 +199,21 @@ a{
 
 @media (max-width: 1600px){
     .curtain-left{
-        transform: translateX(-30px);
-        /* left: -2.5%; */
+        left: -2.5%;
     }
 
     .curtain-right{
-        transform: translateX(30px);
-        /* right: -2.5%; */
+        right: -2.5%;
     }
 }
 
 @media (max-width: 1400px){
     .curtain-left{
-        transform: translate(-70px);
-        /* left: -5.5%; */
+        left: -5.5%;
     }
 
     .curtain-right{
-        transform: translate(70px);
-        /* right: -5.5%; */
+        right: -5.5%;
     }
 }
 
@@ -229,13 +225,11 @@ a{
     }
 
     .curtain-left{
-        transform: translate(-50px);
-        /* left: -4.5%; */
+        left: -4.5%;
     }
 
     .curtain-right{
-        transform: translate(50px);
-        /* right: -4.5%; */
+        right: -4.5%;
     }
 
     h1{
@@ -270,8 +264,7 @@ a{
     }
 
     .curtain-right{
-        transform: translate(15px);
-        /* right: -2%; */
+        right: -2%;
     }
 
     .left-column{
@@ -289,11 +282,11 @@ a{
 
 @media (max-height: 300px) {
     .curtain-left{
-        transform: translateX(-100px);
+        left: -15%;
     }
 
     .curtain-right{
-        transform: translateX(100px);
+        right: -15%;
     }
 }
 
