@@ -347,6 +347,10 @@ a{
     .main{
         padding: 80px 32px;
     }
+
+    .test{
+        display: none;
+    }
 }
 
 /* iPhone X */
