@@ -286,6 +286,12 @@ a{
     }
 }
 
+@media (min-width: 1150px){
+    .mobile-column-content{
+        display: none;
+    }
+}
+
 
 /* Mobile Queries */
 
