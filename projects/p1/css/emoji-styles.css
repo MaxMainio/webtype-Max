@@ -441,7 +441,6 @@ a{
     }
 
     .curtain-right{
-        display: none;
         height: calc(667px * 2px);
         right: -380px;
     }
