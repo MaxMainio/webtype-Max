@@ -428,8 +428,7 @@ a{
 /* iPhone SE */
 @media only screen 
     and (device-width : 375px) 
-    and (device-height : 667px) 
-    and (-webkit-device-pixel-ratio : 2){
+    and (device-height : 667px){
 
     .rod{
         margin-top: 24px;
@@ -442,6 +441,7 @@ a{
     }
 
     .curtain-right{
+        display: none;
         height: calc(667px * 2px);
         right: -380px;
     }
