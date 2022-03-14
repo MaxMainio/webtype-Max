@@ -219,7 +219,6 @@ a{
 @media (max-width: 1250px){
     .grid{
         grid-template-columns: 1fr 3fr 1fr;
-
         max-width: 1250px;
     }
 
@@ -310,7 +309,6 @@ a{
     }
 
     .curtain-right{
-        display: none;
         height: calc(844px * 3px);
         right: -495px;
     }
@@ -351,13 +349,12 @@ a{
 
     .grid{
         grid-template-columns: 6fr 1fr;
-    
         max-width: calc(414px * 3px);
     }
 
     .curtain-right{
-        height: calc(896px * 3px);
-        right: -495px;
+        height: 2120px;
+        right: -490px;
     }
 
     .main{
