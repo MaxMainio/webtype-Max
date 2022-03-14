@@ -309,7 +309,7 @@ a{
     }
 
     .curtain-right{
-        height: calc(844px * 3px);
+        height: 2120px;
         right: -495px;
     }
 
@@ -382,7 +382,7 @@ a{
 }
 
 /* iPhone X */
-@media only screen 
+/* @media only screen 
     and (device-width : 375px) 
     and (device-height : 812px){
 
@@ -423,7 +423,7 @@ a{
         font-size: 2.2rem;
         line-height: 2.6rem;
     }
-}
+} */
 
 /* iPhone SE */
 @media only screen 
