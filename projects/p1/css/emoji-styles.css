@@ -17,8 +17,7 @@ html{
 }
 
 body{
-    background-color: var(--almost-red);
-
+    background-color: var(--black);
     margin-top: 0;
 }
 
