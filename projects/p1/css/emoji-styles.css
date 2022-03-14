@@ -318,6 +318,18 @@ a{
         padding: 80px 32px;
     }
 
+    .introduction{
+        padding-left: 0;
+    }
+
+    .history{
+        padding-right: 0;
+    }
+
+    .today{
+        padding-left: 0;
+    }
+
     h1{
         font-size: 5rem;
     }
@@ -406,6 +418,18 @@ a{
 
     .main{
         padding: 80px 32px;
+    }
+
+    .introduction{
+        padding-left: 0;
+    }
+
+    .history{
+        padding-right: 0;
+    }
+
+    .today{
+        padding-left: 0;
     }
 
     h1{
