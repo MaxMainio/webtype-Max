@@ -296,7 +296,8 @@ a{
 /* iPhone 12 pro */
 @media only screen 
     and (device-width : 390px) 
-    and (device-height : 844px){
+    and (device-height : 844px)
+    and (-webkit-device-pixel-ratio : 3){
 
     .grid{
         grid-template-columns: 6fr 1fr;
@@ -340,7 +341,8 @@ a{
 /* iPhone XR */
 @media only screen 
     and (device-width : 414px) 
-    and (device-height : 896px){
+    and (device-height : 896px)
+    and (-webkit-device-pixel-ratio : 2){
 
     .rod{
         margin-top: 24px;
@@ -384,7 +386,8 @@ a{
 /* iPhone X */
 @media only screen 
     and (device-width : 375px) 
-    and (device-height : 812px){
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3){
 
     .rod{
         margin-top: 24px;
@@ -428,7 +431,8 @@ a{
 /* iPhone SE */
 @media only screen 
     and (device-width : 375px) 
-    and (device-height : 667px){
+    and (device-height : 667px)
+    and (-webkit-device-pixel-ratio : 2){
 
     .rod{
         margin-top: 24px;
