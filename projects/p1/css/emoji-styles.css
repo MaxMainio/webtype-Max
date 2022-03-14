@@ -86,17 +86,19 @@ body{
 .left-column{
     height: 100%;
     background-color: var(--almost-red);
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .right-column{
     height: 100%;
     background-color: var(--almost-red);
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .left-column-content{
     padding-top: 54px;
-    margin-right: 16px;
-    margin-left: 16px;
 }
 
 .right-column-content{
@@ -104,12 +106,10 @@ body{
     flex-direction: column;
 
     padding-top: 5px;
-    margin-right: 16px;
-    margin-left: 16px;
 }
 
 .mobile-column-content{
-    padding-top: 40px;
+    padding-top: 28px;
 }
 
 
@@ -431,6 +431,10 @@ a{
 
     .content-mottos{
         display: none;
+    }
+
+    .right-column-content{
+        padding-right: 24px;
     }
 
     .introduction{
