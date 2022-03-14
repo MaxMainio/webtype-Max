@@ -597,21 +597,29 @@ a{
     and (-webkit-device-pixel-ratio : 3){
 
     .rod{
-        margin-top: 24px;
-        height: 32px;
-    }
-
-    .grid{
-        grid-template-columns: 6fr 1fr;
+        margin-top: 6px;
+        height: 8px;
     }
 
     .curtain-right{
-        height: 1740px;
-        right: -385px;
+        height: 550px;
+        right: -120px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr 1fr;
     }
 
     .main{
-        padding: 80px 32px;
+        padding: 32px 32px;
+    }
+
+    .content-mottos{
+        display: none;
+    }
+
+    .right-column-content{
+        padding-right: 32px;
     }
 
     .introduction{
@@ -627,21 +635,21 @@ a{
     }
 
     h1{
-        font-size: 5rem;
+        font-size: 2.7rem;
     }
 
     h2{
-        font-size: 2.4rem;
+        font-size: 1.8rem;
     }
 
     h3{
-        font-size: 3rem;
+        font-size: 2rem;
 
         margin-bottom: 4px;
     }
 
     p{
-        font-size: 2.2rem;
+        font-size: 1.8rem;
         line-height: 2.6rem;
     }
 }
