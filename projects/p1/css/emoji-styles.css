@@ -26,7 +26,6 @@ body{
 
 .curtains{
     width: 100%;
-    height: 16px;
 }
 
 .rod{
@@ -34,13 +33,14 @@ body{
     height: 16px;
 
     position: fixed;
-    margin-top: 18px;
+    margin-top: 34px;
 }
 
 .curtain-left{
     width: auto;
     height: 100%;
 
+    margin-top: 20px;
     position: fixed;
     left: -0.5%;
 
@@ -53,6 +53,7 @@ body{
     width: auto;
     height: 100%;
 
+    margin-top: 20px;
     position: fixed;
     right: -0.5%;
 
@@ -80,32 +81,29 @@ body{
 .main{
     background-color: var(--almost-white);
 
-    padding: 40px 32px;
+    padding: 56px 32px;
 }
 
 .left-column{
     height: 100%;
     background-color: var(--almost-red);
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0px 16px;
 }
 
 .right-column{
     height: 100%;
     background-color: var(--almost-red);
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0px 16px;
 }
 
 .left-column-content{
-    padding-top: 54px;
+    padding-top: 70px;
 }
 
 .right-column-content{
     display: flex;
     flex-direction: column;
-
-    padding-top: 5px;
+    padding-top: 20px;
 }
 
 .mobile-column-content{
@@ -274,7 +272,7 @@ a{
     }
 }
 
-@media (max-height: 300px) {
+@media (max-height: 600px) {
     .curtain-left{
         left: -15%;
     }
