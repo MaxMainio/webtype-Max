@@ -109,7 +109,7 @@ body{
 
 /* Content */
 .header{
-    margin-bottom: 24px;
+    margin-bottom: 2rem;
 }
 
 .introduction{
@@ -146,18 +146,6 @@ h1{
     margin-top: 0;
 }
 
-.difcolb{
-    color: var(--black);
-}
-
-.difcolw{
-    color: var(--almost-white);
-}
-
-.difcolr{
-    color: var(--almost-red);
-}
-
 .small{
     font-size: 4rem;
     line-height: 4rem;
@@ -180,7 +168,7 @@ h3{
     font-size: 2rem;
     color: var(--almost-red);
 
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 p{
@@ -206,6 +194,18 @@ a{
 
 .quote{
     font-style: italic;
+}
+
+.difcolb{
+    color: var(--black);
+}
+
+.difcolw{
+    color: var(--almost-white);
+}
+
+.difcolr{
+    color: var(--almost-red);
 }
 
 
