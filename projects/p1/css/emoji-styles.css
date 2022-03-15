@@ -1,5 +1,4 @@
 /* Variables */
-
 :root{
     --almost-red:#d82f1f;
     --almost-white:#f2f2f2;
@@ -7,7 +6,6 @@
 }
 
 /* Body */
-
 *{
     margin: 0;
 }
@@ -23,7 +21,6 @@ body{
 
 
 /* Curtains */
-
 .curtains{
     width: 100%;
 }
@@ -63,7 +60,6 @@ body{
 }
 
 /* Base */
-
 .grid{
     display: grid;
     gap: 0;
@@ -97,7 +93,7 @@ body{
 }
 
 .left-column-content{
-    padding-top: 60px;
+    padding-top: 65px;
 }
 
 .right-column-content{
@@ -112,7 +108,6 @@ body{
 
 
 /* Content */
-
 .header{
     margin-bottom: 24px;
 }
@@ -140,7 +135,6 @@ body{
 
 
 /* Type */
-
 h1{
     font-family: aktiv-grotesk, sans-serif;
     font-style: normal;
@@ -216,7 +210,6 @@ a{
 
 
 /* Desktop Queries */
-
 @media (max-width: 1600px){
     .curtain-left{
         left: -2.5%;
