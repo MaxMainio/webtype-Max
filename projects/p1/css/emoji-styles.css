@@ -33,7 +33,7 @@ body{
     margin-top: 34px;
 }
 
-.curtain-left{
+.lcurtain{
     width: auto;
     height: 100%;
 
@@ -46,7 +46,7 @@ body{
     transition-duration: 500ms;
 }
 
-.curtain-right{
+.rcurtain{
     width: auto;
     height: 100%;
 
@@ -80,23 +80,23 @@ body{
     padding: 56px 32px;
 }
 
-.left-column{
+.lcolumn{
     height: 100%;
     background-color: var(--almost-red);
     padding: 0px 16px;
 }
 
-.right-column{
+.rcolumn{
     height: 100%;
     background-color: var(--almost-red);
     padding: 0px 16px;
 }
 
-.left-column-content{
+.lcolumn-content{
     padding-top: 65px;
 }
 
-.right-column-content{
+.rcolumn-content{
     display: flex;
     flex-direction: column;
     padding-top: 20px;
@@ -211,21 +211,21 @@ a{
 
 /* Desktop Queries */
 @media (max-width: 1600px){
-    .curtain-left{
+    .lcurtain{
         left: -2.5%;
     }
 
-    .curtain-right{
+    .rcurtain{
         right: -2.5%;
     }
 }
 
 @media (max-width: 1400px){
-    .curtain-left{
+    .lcurtain{
         left: -5.5%;
     }
 
-    .curtain-right{
+    .rcurtain{
         right: -5.5%;
     }
 }
@@ -236,11 +236,11 @@ a{
         max-width: 1250px;
     }
 
-    .curtain-left{
+    .lcurtain{
         left: -4.5%;
     }
 
-    .curtain-right{
+    .rcurtain{
         right: -4.5%;
     }
 
@@ -271,19 +271,19 @@ a{
         max-width: 1150px;
     }
 
-    .curtain-left{
+    .lcurtain{
         display: none;
     }
 
-    .curtain-right{
+    .rcurtain{
         right: -2%;
     }
 
-    .left-column{
+    .lcolumn{
         display: none;
     }
 
-    .left-column-content{
+    .lcolumn-content{
         display: none;
     }
 }
@@ -293,11 +293,11 @@ a{
         grid-template-columns: 1fr 2fr 1fr;
     }
 
-    .curtain-left{
+    .lcurtain{
         left: -15%;
     }
 
-    .curtain-right{
+    .rcurtain{
         right: -15%;
     }
 }
@@ -326,7 +326,7 @@ a{
         margin-top: 32px;
     }
 
-    .curtain-right{
+    .rcurtain{
         height: 2120px;
         right: -495px;
     }
@@ -345,6 +345,10 @@ a{
 
     .today{
         padding-left: 0;
+    }
+
+    .tomorrow{
+        padding-right: 0;
     }
 
     h1{
@@ -378,7 +382,7 @@ a{
         height: 8px;
     }
 
-    .curtain-right{
+    .rcurtain{
         height: 450px;
         right: -90px;
     }
@@ -395,7 +399,7 @@ a{
         display: none;
     }
 
-    .right-column-content{
+    .rcolumn-content{
         padding-right: 32px;
     }
 
@@ -409,6 +413,10 @@ a{
 
     .today{
         padding-left: 0;
+    }
+
+    .tomorrow{
+        padding-right: 0;
     }
 
     h1{
@@ -446,7 +454,7 @@ a{
         grid-template-columns: 6fr 1fr;
     }
 
-    .curtain-right{
+    .rcurtain{
         height: 2120px;
         right: -490px;
     }
@@ -465,6 +473,10 @@ a{
 
     .today{
         padding-left: 0;
+    }
+
+    .tomorrow{
+        padding-right: 0;
     }
 
     h1{
@@ -498,7 +510,7 @@ a{
         height: 8px;
     }
 
-    .curtain-right{
+    .rcurtain{
         height: 450px;
         right: -100px;
     }
@@ -529,6 +541,10 @@ a{
 
     .today{
         padding-left: 0;
+    }
+
+    .tomorrow{
+        padding-right: 0;
     }
 
     h1{
@@ -687,7 +703,7 @@ a{
         grid-template-columns: 6fr 1fr;
     }
 
-    .curtain-right{
+    .rcurtain{
         height: 1740px;
         right: -385px;
     }
@@ -706,6 +722,10 @@ a{
 
     .today{
         padding-left: 0;
+    }
+
+    .tomorrow{
+        padding-right: 0;
     }
 
     h1{
@@ -739,7 +759,7 @@ a{
         height: 8px;
     }
 
-    .curtain-right{
+    .rcurtain{
         height: 550px;
         right: -120px;
     }
@@ -770,6 +790,10 @@ a{
 
     .today{
         padding-left: 0;
+    }
+
+    .tomorrow{
+        padding-right: 0;
     }
 
     h1{
