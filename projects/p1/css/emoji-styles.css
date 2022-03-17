@@ -219,7 +219,7 @@ a{
 @media (max-width: 1700px){
     .small{
         font-size: 3rem;
-        line-height: 4rem;
+        line-height: 3rem;
         margin-bottom: 1rem;
     }
 }
@@ -326,7 +326,7 @@ a{
 /* Mobile Queries */
 
 /* iPhone 12 pro portrait */
-@media only screen 
+/* @media only screen 
     and (device-width : 390px) 
     and (device-height : 844px)
     and (-webkit-device-pixel-ratio : 3){
@@ -383,10 +383,10 @@ a{
         font-size: 2.2rem;
         line-height: 2.6rem;
     }
-}
+} */
 
 /* iPhone 12 pro landscape */
-@media only screen 
+/* @media only screen 
     and (device-width : 844px) 
     and (device-height : 390px)
     and (-webkit-device-pixel-ratio : 3){
@@ -451,10 +451,10 @@ a{
         font-size: 1.8rem;
         line-height: 2.6rem;
     }
-}
+} */
 
 /* iPhone XR Portrait */
-@media only screen 
+/* @media only screen 
     and (device-width : 414px) 
     and (device-height : 896px)
     and (-webkit-device-pixel-ratio : 2){
@@ -511,10 +511,10 @@ a{
         font-size: 2.2rem;
         line-height: 2.6rem;
     }
-}
+} */
 
 /* iPhone XR  Landscape */
-@media only screen 
+/* @media only screen 
     and (device-width : 896px) 
     and (device-height : 414px)
     and (-webkit-device-pixel-ratio : 2){
@@ -579,7 +579,7 @@ a{
         font-size: 1.8rem;
         line-height: 2.6rem;
     }
-}
+} */
 
 /* iPhone X portrait */
 /* @media only screen 
@@ -726,20 +726,16 @@ a{
         padding: 80px 32px;
     }
 
-    .introduction{
-        padding-left: 0;
+    .align-l{
+        padding: 0;
     }
 
-    .history{
-        padding-right: 0;
+    .align-r{
+        padding: 0;
     }
 
-    .today{
-        padding-left: 0;
-    }
-
-    .tomorrow{
-        padding-right: 0;
+    .mobile-column-content{
+        display: none;
     }
 
     h1{
@@ -794,16 +790,12 @@ a{
         padding-right: 32px;
     }
 
-    .introduction{
-        padding-left: 0;
+    .align-l{
+        padding: 0;
     }
 
-    .history{
-        padding-right: 0;
-    }
-
-    .today{
-        padding-left: 0;
+    .align-r{
+        padding: 0;
     }
 
     .tomorrow{
