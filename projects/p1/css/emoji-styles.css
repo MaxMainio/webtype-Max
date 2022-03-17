@@ -29,14 +29,13 @@ body{
     height: 16px;
 
     position: fixed;
-    margin-top: 34px;
+    margin-top: 14px;
 }
 
 .curtain-l{
     width: auto;
     height: 100%;
 
-    margin-top: 20px;
     position: fixed;
     left: -0.5%;
 
@@ -49,7 +48,6 @@ body{
     width: auto;
     height: 100%;
 
-    margin-top: 20px;
     position: fixed;
     right: -0.5%;
 
@@ -121,7 +119,7 @@ body{
     margin: auto;
 }
 
-.introduction{
+/* .introduction{
 
 }
 
@@ -135,7 +133,7 @@ body{
 
 .tomorrow{
 
-}
+} */
 
 .mottos{
     margin-top: 0;
