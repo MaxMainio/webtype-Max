@@ -16,7 +16,6 @@ html{
 
 body{
     background-color: var(--black);
-    margin-top: 0;
 }
 
 
@@ -70,14 +69,12 @@ body{
     
     height: 100%;
     max-width: 1800px;
-
-    margin-top: -21px;
 }
 
 .main{
     background-color: var(--almost-white);
 
-    padding: 56px 32px;
+    padding: 35px 32px;
 }
 
 .column-l{
@@ -93,13 +90,12 @@ body{
 }
 
 .column-l-content{
-    padding-top: 65px;
+    padding-top: 44px;
 }
 
 .column-r-content{
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
 }
 
 .mobile-column-content{
