@@ -69,19 +69,7 @@ body{
     max-width: 1800px;
 }
 
-.main{
-    background-color: var(--almost-white);
-
-    padding: 35px 32px;
-}
-
 .column-l{
-    height: 100%;
-    background-color: var(--almost-red);
-    padding: 0px 16px;
-}
-
-.column-r{
     height: 100%;
     background-color: var(--almost-red);
     padding: 0px 16px;
@@ -89,6 +77,18 @@ body{
 
 .column-l-content{
     padding-top: 44px;
+}
+
+.main{
+    background-color: var(--almost-white);
+
+    padding: 35px 32px;
+}
+
+.column-r{
+    height: 100%;
+    background-color: var(--almost-red);
+    padding: 0px 16px;
 }
 
 .column-r-content{
@@ -118,22 +118,6 @@ body{
     width: 66%;
     margin: auto;
 }
-
-/* .introduction{
-
-}
-
-.history{
-
-}
-
-.today{
-
-}
-
-.tomorrow{
-
-} */
 
 .mottos{
     margin-top: 0;
@@ -232,6 +216,14 @@ a{
 
 
 /* Desktop Queries */
+@media (max-width: 1700px){
+    .small{
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 1rem;
+    }
+}
+
 @media (max-width: 1600px){
     .curtain-l{
         left: -2.5%;
