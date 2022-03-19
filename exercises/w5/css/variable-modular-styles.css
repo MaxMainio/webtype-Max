@@ -32,12 +32,14 @@ h5{
     font-family: illegible, snas;
     font-style: normal;
     font-size: 8rem;
+    font-variation-settings: 'wght' 500;
 }
 
 h6{
     font-family: illegible, snas;
     font-style:normal;
     font-size: 4rem;
+    font-variation-settings: 'wght' 500;
 
     text-transform: lowercase;
     line-height: 3.5rem;
