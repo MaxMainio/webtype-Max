@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "illegible";
+    src: url('../assets/Illegible-VariableVF.woff2') format('woff2');
+}
+
+.header{
+    margin-bottom: 32px;
+}
+
+.show-case{
+    margin-top: 32px;
+}
+
+.characters{
+    margin-top: -20px;
+}
+
+.sample{
+    margin-top: 0;
+    padding-right: 40%;
+}
+
+h1{
+    margin-bottom: 4px;
+}
+
+p{
+    margin-top: 0px;
+}
+
+h5{
+    font-family: illegible, snas;
+    font-style: normal;
+    font-size: 8rem;
+}
+
+h6{
+    font-family: illegible, snas;
+    font-style:normal;
+    font-size: 4rem;
+
+    text-transform: lowercase;
+    line-height: 3.5rem;
+
+    margin-bottom: 3.5rem;
+}
