@@ -3,6 +3,10 @@
     src: url('../assets/Illegible-Regular.woff2') format('woff2');
 }
 
+.main{
+    padding-right: 20%;
+}
+
 .header{
     margin-bottom: 32px;
 }
@@ -17,7 +21,6 @@
 
 .sample{
     margin-top: 0;
-    padding-right: 40%;
 }
 
 h1{
