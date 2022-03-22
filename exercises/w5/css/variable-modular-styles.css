@@ -31,54 +31,6 @@
     margin-top: 0;
 }
 
-/* .buttons{
-    height: 100%;
-    width: 20%;
-
-    position: fixed;
-    right: 0;
-    transform: translate(0, -24px);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-#dumb{
-    width: 100px;
-    height: 100px;
-    background-color: var(--almost-white);
-
-    position: fixed;
-    right: 24px;
-}
-
-#dumb:hover + .main{
-    font-variation-settings: 'wght' 500;
-}
-
-#hyper{
-    width: 100px;
-    height: 100px;
-    background-color: var(--almost-white);
-
-    position: fixed;
-    right: 24px;
-    transform: translate(0, 124px);
-}
-
-#space{
-    width: 100px;
-    height: 100px;
-    background-color: var(--almost-white);
-
-    position: fixed;
-    right: 24px;
-    transform: translate(0, 248px);
-} */
-
 h1{
     margin-bottom: 4px;
 }
