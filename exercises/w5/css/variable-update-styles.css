@@ -42,6 +42,7 @@ h5{
     font-family: illegible, snas;
     font-size: 8rem;
     transition: 5s;
+    word-wrap: break-word;
 }
 
 .shrink:hover{
