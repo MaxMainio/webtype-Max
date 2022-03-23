@@ -11,8 +11,7 @@
 
 #main{
     padding-right: 20%;
-    font-variation-settings: 'wght' 10;
-    animation: fontanim 5s infinite alternate;
+    font-variation-settings: 'wght' 160, 'wdth' 0;
 }
 
 .header{
@@ -41,32 +40,18 @@ p{
 
 h5{
     font-family: illegible, snas;
-    font-style: normal;
     font-size: 8rem;
+    transition: 5s;
 }
 
-h6{
-    font-family: illegible, snas;
-    font-style:normal;
-    font-size: 4rem;
-
-    text-transform: lowercase;
-    line-height: 3.5rem;
-
-    margin-bottom: 3.5rem;
+.shrink:hover{
+    font-variation-settings: 'wght' 10, 'wdth' 0;
 }
 
-.btext{
-    text-transform: uppercase;
-    font-weight: bolder;
-    color: var(--almost-red);
+.enlarge:hover{
+    font-variation-settings: 'wght' 500, 'wdth' 0;
 }
 
-@keyframes fontanim{
-    form{
-        font-variation-settings: 'wght' 10;
-    }
-    to{
-        font-variation-settings: 'wght' 500;
-    }
+.space:hover{
+    font-variation-settings: 'wght' 160, 'wdth' 500;
 }
