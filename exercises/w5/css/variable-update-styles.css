@@ -11,7 +11,7 @@
 
 #main{
     padding-right: 20%;
-    font-variation-settings: 'wght' 160, 'wdth' 0;
+    font-variation-settings: 'wght' 250, 'wdth' 0;
 }
 
 .header{
@@ -54,5 +54,5 @@ h5{
 }
 
 .space:hover{
-    font-variation-settings: 'wght' 160, 'wdth' 500;
+    font-variation-settings: 'wght' 250, 'wdth' 500;
 }
