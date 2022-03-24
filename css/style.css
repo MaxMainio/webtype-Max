@@ -8,7 +8,7 @@
     --type: #000;
 }
 
-.darktheme{
+.darkMode{
     --bg: #000;
     --type: #fff;
 }
@@ -114,6 +114,22 @@ a{
 
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 1.6rem;
+    
+    color: var(--almost-red);
+
+    border: none;
+    background: none;
+
+    padding: 0;
+
+    cursor: pointer;
 }
 
 .listed{
