@@ -3,13 +3,14 @@
 :root{
     --almost-red:#d82f1f;
     --almost-white:#f2f2f2;
-    --white: #fff;
     --black: #000;
+    --bg: #fff;
+    --type: #000;
 }
 
 .darktheme{
-    --almost-white: #000;
-    --black: #fff;
+    --bg: #000;
+    --type: #fff;
 }
 
 /* Body */
@@ -25,7 +26,7 @@ html{
 body{
     margin: 24px;
     padding: 0;
-    background: var(--white);
+    background: var(--bg);
 }
 
 /* Type */
@@ -35,6 +36,8 @@ h1{
     font-style: normal;
     font-weight: bold;
     font-size: 3.2rem;
+
+    color: var(--type);
 
     margin-top: 0px;
     margin-bottom: 20px;
@@ -58,6 +61,8 @@ h3{
     font-weight: bold;
     font-size: 2.1rem;
 
+    color: var(--type);
+
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -67,6 +72,8 @@ h4{
     font-style: normal;
     font-weight: bold;
     font-size: 1.6rem;
+
+    color: var(--type);
 
     margin-top: 10px;
     margin-bottom: 4px;
@@ -78,6 +85,8 @@ p{
     font-weight: normal;
     font-size: 1.6rem;
 
+    color: var(--type);
+
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -87,6 +96,8 @@ ol{
     font-style: italic;
     font-weight: normal;
     font-size: 1.6rem;
+
+    color: var(--type);
 
     margin-top: 10px;
     margin-bottom: 10px;
