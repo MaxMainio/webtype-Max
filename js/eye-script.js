@@ -2,8 +2,9 @@ var iris = document.getElementsByClassName("img-emoji-iris");
 document.onmousemove = function(){
   var x = event.clientX * 100/window.innerWidth + "%";
   var y = event.clientY * 100/window.innerHeight + "%";
-  //event.clientX => get the horizontal coordinate of the onmousemove
-  //event.clientY => get the verticle coordinate of the onmousemove
+
+  //event.clientX => get the horizontal coordinate of the onMouseMove
+  //event.clientY => get the verticle coordinate of the onMouseMove
   //window.innerWidth => get the browser width
   //window.innerHeight => get the browser height
 

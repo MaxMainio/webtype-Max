@@ -1,3 +1,7 @@
+.invis{
+    display: none;
+}
+
 .emoji-eye{
     position: absolute;
     top: 50%;
@@ -28,17 +32,18 @@
     transform: translate(-50%, -50%);
 }
 
-.emoji-eye-lid{
+.emoji-eye-lid-light{
     position: absolute;
     width: 240px;
     height: 182.5px;
 }
 
-.img-emoji-eye-lid{
+.img-emoji-eye-lid-light{
     position: absolute;
     width: 240px;
 }
 
-.img{
-    width: 100%;
+.img-emoji-eye-lid-dark{
+    position: absolute;
+    width: 240px;
 }
