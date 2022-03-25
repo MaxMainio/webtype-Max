@@ -27,6 +27,8 @@ body{
     margin: 24px;
     padding: 0;
     background: var(--bg);
+
+    transition: 1s;
 }
 
 /* Type */
@@ -147,4 +149,6 @@ button{
     position: absolute;
     width: 240px;
     fill: var(--bg);
+
+    transition: 1s;
 }
