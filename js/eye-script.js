@@ -1,4 +1,4 @@
-var iris = document.getElementsByClassName("img-emoji-iris");
+var iris = document.getElementsByClassName("emoji-iris");
 document.onmousemove = function(){
   var x = event.clientX * 100/window.innerWidth + "%";
   var y = event.clientY * 100/window.innerHeight + "%";

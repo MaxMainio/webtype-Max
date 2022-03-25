@@ -2,7 +2,7 @@
     display: none;
 }
 
-.emoji-eye{
+.eye{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -11,12 +11,12 @@
     transform: translateX(-120px);
 }
 
-.img-emoji-eye-base{
+.emoji-eye{
     position: absolute;
     width: 240px;
 }
 
-.emoji-iris{
+.iris{
     position: fixed;
     left: 50%;
     width: 240px;
@@ -24,7 +24,7 @@
     transform: translateX(-120px);
 }
 
-.img-emoji-iris{
+.emoji-iris{
     position: absolute;
     width: 125px;
     top: 50%;
@@ -32,18 +32,13 @@
     transform: translate(-50%, -50%);
 }
 
-.emoji-eye-lid-light{
+.eye-lid{
     position: absolute;
     width: 240px;
     height: 182.5px;
 }
 
-.img-emoji-eye-lid-light{
-    position: absolute;
-    width: 240px;
-}
-
-.img-emoji-eye-lid-dark{
+.emoji-eye-lid{
     position: absolute;
     width: 240px;
 }

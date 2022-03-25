@@ -142,3 +142,9 @@ button{
 .second{
     margin-top: 4px;
 }
+
+#eye-mask{
+    position: absolute;
+    width: 240px;
+    fill: var(--bg);
+}
