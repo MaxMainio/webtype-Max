@@ -75,9 +75,6 @@ h4{
 
     color: var(--type);
 
-    margin-top: 10px;
-    margin-bottom: 4px;
-
     transition: 1s;
 }
 
@@ -89,9 +86,6 @@ p{
 
     color: var(--type);
 
-    margin-top: 10px;
-    margin-bottom: 10px;
-
     transition: 1s;
 }
 
@@ -102,9 +96,6 @@ ol{
     font-size: 1.6rem;
 
     color: var(--type);
-
-    margin-top: 10px;
-    margin-bottom: 10px;
 
     transition: 1s;
 }
@@ -118,8 +109,7 @@ a{
     color: var(--almost-red);
     text-decoration: none;
 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-right: 0.5rem;
 }
 
 button{
@@ -149,11 +139,16 @@ button{
 .listed{
     display: flex;
     flex-wrap: nowrap;
-    gap: 3.2rem;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+.when{
+    margin-bottom: 0.4rem;
 }
 
 .second{
-    margin-top: 4px;
+    margin-top: 0.4rem;
 }
 
 #eye-mask{
