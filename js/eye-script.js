@@ -10,9 +10,6 @@ document.onmousemove = function(){
 
   for(var i=0;i<2;i++){
     iris[i].style.left = x;
-    console.log("IRIS: ", iris[i])
-    console.log("IRIS style: ", iris[i].style)
-    console.log("IRIS style left: ", iris[i].style.left)
     iris[i].style.top = y;
     iris[i].style.transform = "translate(-"+x+", -"+y+")";
   }
