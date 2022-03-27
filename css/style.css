@@ -24,7 +24,7 @@ html{
 }
 
 body{
-    margin: 24px;
+    margin: 2.4rem;
     padding: 0;
     background: var(--bg);
 
@@ -40,9 +40,6 @@ h1{
     font-size: 3.2rem;
 
     color: var(--type);
-
-    margin-top: 0px;
-    margin-bottom: 20px;
 
     transition: 1s;
 }
@@ -66,9 +63,6 @@ h3{
     font-size: 2.1rem;
 
     color: var(--type);
-
-    margin-top: 20px;
-    margin-bottom: 10px;
 
     transition: 1s;
 }
@@ -144,11 +138,18 @@ button{
     cursor: pointer;
 }
 
+#exercises{
+    margin: 2rem 0;
+}
+
+#projects{
+    margin: 2rem 0;
+}
+
 .listed{
     display: flex;
     flex-wrap: nowrap;
-    gap: 32px;
-    margin-top: -10px;
+    gap: 3.2rem;
 }
 
 .second{
