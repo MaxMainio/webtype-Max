@@ -14,12 +14,8 @@
     font-variation-settings: 'wght' 250, 'wdth' 0;
 }
 
-.header{
-    margin-bottom: 32px;
-}
-
 .show-case{
-    margin-top: 32px;
+    margin-top: 3rem;
 }
 
 .characters{
@@ -30,12 +26,8 @@
     margin-top: 0;
 }
 
-h1{
-    margin-bottom: 4px;
-}
-
 p{
-    margin-top: 0px;
+    margin-top: 0.4rem;
 }
 
 h5{

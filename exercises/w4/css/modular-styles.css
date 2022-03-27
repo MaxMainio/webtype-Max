@@ -3,32 +3,24 @@
     src: url('../assets/Illegible-Regular.woff2') format('woff2');
 }
 
-.main{
+#main{
     padding-right: 20%;
 }
 
-.header{
-    margin-bottom: 32px;
+.title{
+    margin-top: -2rem;
 }
 
 .show-case{
-    margin-top: 32px;
+    margin-top: 3rem;
 }
 
 .characters{
-    margin-top: -20px;
-}
-
-.sample{
-    margin-top: 0;
-}
-
-h1{
-    margin-bottom: 4px;
+    margin-top: -2rem;
 }
 
 p{
-    margin-top: 0px;
+    margin-top: 0.4rem;
 }
 
 h5{
