@@ -11,19 +11,6 @@
 
 #main{
     padding-right: 20%;
-    font-variation-settings: 'wght' 250, 'wdth' 0;
-}
-
-.show-case{
-    margin-top: 3rem;
-}
-
-.characters{
-    margin-top: -10px;
-}
-
-.sample{
-    margin-top: 0;
 }
 
 p{
@@ -33,18 +20,6 @@ p{
 h5{
     font-family: illegible, snas;
     font-size: 8rem;
-    transition: 5s;
     word-wrap: break-word;
-}
-
-.shrink:hover{
-    font-variation-settings: 'wght' 10, 'wdth' 0;
-}
-
-.enlarge:hover{
-    font-variation-settings: 'wght' 500, 'wdth' 0;
-}
-
-.space:hover{
-    font-variation-settings: 'wght' 250, 'wdth' 500;
+    font-variation-settings: 'wght' 250, 'wdth' 0;
 }
