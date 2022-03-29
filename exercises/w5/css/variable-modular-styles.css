@@ -1,17 +1,11 @@
 @font-face {
     font-family: "illegible";
-    src: url('../assets/Illegible-VariableVF.woff2') format('woff2');
-}
-
-:root{
-    --almost-red:#d82f1f;
-    --almost-white:#f2f2f2;
-    --black: #000000;
+    src: url('../assets/Illegible-VF.woff2') format('woff2');
 }
 
 #main{
     padding-right: 20%;
-    font-variation-settings: 'wght' 10;
+    font-variation-settings: 'wght' 10, 'wdth' 0;
     animation: fontanim 5s infinite alternate;
 }
 
@@ -46,9 +40,9 @@ h6{
 
 @keyframes fontanim{
     form{
-        font-variation-settings: 'wght' 10;
+        font-variation-settings: 'wght' 10, 'wdth' 0;
     }
     to{
-        font-variation-settings: 'wght' 500;
+        font-variation-settings: 'wght' 500, 'wdth' 0;
     }
 }
