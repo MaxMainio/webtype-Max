@@ -1,5 +1,7 @@
 console.log("https://www.youtube.com/watch?v=NuAKnbIr6TE");
 
+// weight slider
+
 var wghtslider = document.getElementById("weight");
 var wghtoutput = document.getElementById("weight-value");
 
@@ -16,8 +18,12 @@ wghtslider.addEventListener("mousemove", function(){
     wghtslider.style.background = color;
 })
 
+// width slider
+
 var wdthslider = document.getElementById("width");
 var wdthoutput = document.getElementById("width-value");
+
+wdthoutput.innerHTML = wdthslider.value;
 
 wdthslider.oninput = function() {
     wdthoutput.innerHTML = this.value;
