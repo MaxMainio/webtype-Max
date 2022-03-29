@@ -15,10 +15,34 @@
         <p>Illegible Sans is now EVEN MORE variable! and it has sliders.</p>
       </div>
   
-      <div class="show-case">
+      <div class="content">
         <h5>abcdefghijklmnopqrstuvwxyz</h5>
         <h5>1234567890.,-'"!?():;</h5>
       </div>
     </section>
+
+    <section id="interact">
+      <div id="weight-slider">
+        <input type="range" min="10" max="500" value="250" id="weight" class="slider">
+        
+        <div class="context">
+          <p class="left">^ Hyper Illegible</p>
+          <p class="center"><span id="weight-value"></span></p>
+          <p class="right">Dumb Thick Illegible ^</p>
+        </div>
+      </div>
+
+      <div id="width-slider">
+        <input type="range" min="0" max="500" value="250" id="width" class="slider">
+        
+        <div class="context">
+          <p class="left">^ Illegible</p>
+          <p class="center"><span id="width-value"></span></p>
+          <p class="right">Still pretty damn Illegible ^</p>
+        </div>
+      </div>
+    </section>
   </body>
+
+  <script src="js/sliders.js"></script>
 </html>
