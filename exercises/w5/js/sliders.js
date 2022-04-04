@@ -4,6 +4,9 @@ console.log("https://www.youtube.com/watch?v=NuAKnbIr6TE");
 
 var wghtslider = document.getElementById("weight");
 var wghtoutput = document.getElementById("weight-value");
+var fontwght = document.querySelector(":root");
+
+console.log(fontwght.style);
 
 wghtoutput.innerHTML = wghtslider.value;
 
