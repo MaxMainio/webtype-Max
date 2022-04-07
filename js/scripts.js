@@ -5,3 +5,9 @@ $(document).ready(function(){
         $("body").toggleClass("darkMode");
     });
 });
+
+$(document).ready(function(){
+    $("#white-mode-toggle").click(function(){
+        $("body").toggleClass("whiteMode");
+    });
+});
