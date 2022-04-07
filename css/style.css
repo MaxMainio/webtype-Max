@@ -6,6 +6,7 @@
     --black: #000;
     --bg: #fff;
     --type: #000;
+    --drop: none;
 }
 
 .darkMode{
@@ -16,10 +17,6 @@
 .whiteMode{
     --type: #fcfcfc;
     --almost-red: #fffcfc;
-}
-
-.blingMode{
-    --bg: linear-gradient(45deg, yellow 33%, rgb(165, 144, 42) 66%);
 }
 
 /* Body */
