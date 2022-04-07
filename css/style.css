@@ -18,6 +18,10 @@
     --almost-red: #fffcfc;
 }
 
+.blingMode{
+    --bg: linear-gradient(45deg, yellow 33%, rgb(165, 144, 42) 66%);
+}
+
 /* Body */
 
 *{

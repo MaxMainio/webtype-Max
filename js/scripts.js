@@ -11,3 +11,9 @@ $(document).ready(function(){
         $("body").toggleClass("whiteMode");
     });
 });
+
+$(document).ready(function(){
+    $("#bling-mode-toggle").click(function(){
+        $("body").toggleClass("blingMode");
+    });
+});
