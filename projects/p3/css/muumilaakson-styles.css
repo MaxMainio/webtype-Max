@@ -118,3 +118,136 @@ body{
     right: auto;
     bottom: auto;
 }
+
+/* Metsä */
+#metsä{
+    overflow: hidden;
+}
+
+#taain-metsä{
+    background-image: url('../assets/Metsä/Taain-Metsä.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 40%;
+}
+
+#taka-metsä{
+    background-image: url('../assets/Metsä/Taka-Metsä.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 60%;
+}
+
+#keski-metsä{
+    background-image: url('../assets/Metsä/Keski-Metsä.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 80%;
+}
+
+#etu-metsä{
+    background-image: url('../assets/Metsä/Etu-Metsä.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 90%;
+}
+
+#tiheys{
+    position: absolute;
+    width: 100%;
+    height: 1200px;
+    background-color: #1a1a1a;
+
+    top: 1800px;
+}
+
+/* kehä */
+#kehä{
+    overflow: hidden;
+}
+
+#tausta{
+    position: absolute;
+    width: 100%;
+    height: 1220px;
+    background-color: #4d4d4d;
+
+    top: 3000px;
+}
+
+#taka-alaosa{
+    background-image: url('../assets/Kehä/Taka-Alaosa.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 2450px;
+}
+
+#runko-1{
+    background-image: url('../assets/Kehä/Runko-1.svg');
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 3200px;
+    left: 75px;
+}
+
+#varjo{
+    background-image: url('../assets/Kehä/Varjo.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 2700px;
+}
+
+#etu-alaosa{
+    background-image: url('../assets/Kehä/Etu-Alaosa.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 2400px;
+}
