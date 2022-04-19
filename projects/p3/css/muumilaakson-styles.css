@@ -1,6 +1,7 @@
 /* Variables */
 :root{
-
+    --almost-red:#d82f1f;
+    --almost-white:#f2f2f2;
 }
 
 /* Body */
@@ -12,3 +13,108 @@ html{
     font-size: 62.5%; /* 10px */
 }
 
+body{
+    background-color: var(--almost-white);
+}
+
+#aurinko{
+    background-image: url('../assets/Aurinko.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    position: absolute;
+    width: 300px;
+    height: 300px;
+
+    left: auto;
+    top: 5%;
+    right: 5%;
+    bottom: auto;
+}
+
+/* Laakso */
+#laakso{
+    overflow: hidden;
+}
+
+#taka-maisema{
+    background-image: url('../assets/Laakso/Taka_Maisema.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 30%;
+}
+
+#maisema{
+    background-image: url('../assets/Laakso/Maisema.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 30%;
+}
+
+#keski-maisema{
+    background-image: url('../assets/Laakso/Keski-Maisema.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 30%;
+}
+
+#etu-maisema{
+    background-image: url('../assets/Laakso/Etu-Maisema.svg');
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+    background-size: auto;
+
+    height: 100vh;
+    width: 1800px;
+    position: absolute;
+
+    top: 30%;
+}
+
+#tie{
+    background-image: url('../assets/Laakso/tie.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    position: absolute;
+    height: 400px;
+    width: 1000px;
+
+    left: 400px;
+    top: 74%;
+    right: auto;
+    bottom: auto;
+}
+
+#muumitalo{
+    background-image: url('../assets/Laakso/Muumitalo.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    position: absolute;
+    height: 250px;
+    width: 250px;
+
+    left: 400px;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+}
