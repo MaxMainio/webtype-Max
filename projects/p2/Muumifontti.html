@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Muumifontti</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"> </link>
+    <link rel="stylesheet" type="text/css" href="css/Muumifontti-styles.css"> </link>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+  </script>
+  </head>
+  
+  <body>
+    <section id="main">
+      <div class="header">
+        <h1>Muumifontti</h1>
+        <h2>Variable font</h2>
+      </div>
+  
+      <div id="content">
+        <h5>abcdefghijklmnopqrstuvwxyz</h5>
+        <h5>1234567890.,-'"!?():;</h5>
+      </div>
+    </section>
+
+    <section id="interact">
+      <div id="weight-slider">
+        <input type="range" id="height" min="0" max="100" value="0" id="height" class="slider">
+        
+        <div class="context">
+          <p class="left">^ No Hattivattis</p>
+          <p class="center"><span id="weight-value"></span></p>
+          <p class="right">Yes Hattivattis ^</p>
+        </div>
+      </div>
+
+      <div id="width-slider">
+        <input type="range" id="wiggle" min="0" max="100" value="0" id="wiggle" class="slider">
+        
+        <div class="context">
+          <p class="left">^ Wiggle</p>
+          <p class="center"><span id="width-value"></span></p>
+          <p class="right">Wiggle ^</p>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="js/Input-Range.js"></script>
+</html>
