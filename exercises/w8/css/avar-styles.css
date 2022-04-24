@@ -24,6 +24,7 @@ p{
 h5{
     font-family: NewFontVF;
     font-style: normal;
+    font-weight: normal;
     font-size: 36rem;
     color: var(--almost-red);
 }
