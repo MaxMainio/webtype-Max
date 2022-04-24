@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "NewFontVF";
+    src: url('../assets/NewFontVF.woff2') format('woff2');
+}
+
+:root{
+    --almost-red:#d82f1f;
+}
+
+#main{
+    padding-right: 20%;
+    font-variation-settings: 'wght' 0, 'wdth' 0;
+    animation: fontanim 5s infinite alternate;
+}
+
+#show-case{
+    margin-top: 0;
+}
+
+p{
+    margin-top: 0.4rem;
+}
+
+h5{
+    font-family: NewFontVF;
+    font-style: normal;
+    font-size: 36rem;
+    color: var(--almost-red);
+}
+
+@keyframes fontanim{
+    form{
+        font-variation-settings: 'wght' 0, 'wdth' 0;
+    }
+    to{
+        font-variation-settings: 'wght' 100, 'wdth' 100;
+    }
+}
