@@ -11,7 +11,7 @@
     padding-right: 20%;
     font-variation-settings: 'wght' 0, 'wdth' 0;
     animation: fontanim 1s infinite alternate;
-    animation-timing-function: linear;
+    /* animation-timing-function: linear; */
 }
 
 #show-case{
