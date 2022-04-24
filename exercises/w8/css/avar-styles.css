@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "NewFontVF";
-    src: url('../assets/NewFontVF.woff2') format('woff2');
+    font-family: "AVARSquareVF";
+    src: url('../assets/AVARSquareVF.woff2') format('woff2');
 }
 
 :root{
@@ -10,7 +10,8 @@
 #main{
     padding-right: 20%;
     font-variation-settings: 'wght' 0, 'wdth' 0;
-    animation: fontanim 5s infinite alternate;
+    animation: fontanim 1s infinite alternate;
+    animation-timing-function: linear;
 }
 
 #show-case{
@@ -22,7 +23,7 @@ p{
 }
 
 h5{
-    font-family: NewFontVF;
+    font-family: AVARSquareVF;
     font-style: normal;
     font-weight: normal;
     font-size: 36rem;
