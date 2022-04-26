@@ -6,10 +6,10 @@ $(document).ready(function(){
         let inputType = $(this).attr('id');
         let inputValue = $(this).val();
 
-        if (inputType == 'weight'){
-            $('#content').css('--text-weight', inputValue);
+        if (inputType == 'height'){
+            $('#content').css('--text-height', inputValue);
         }else{
-            $('#content').css('--text-width', inputValue);
+            $('#content').css('--text-wiggle', inputValue);
         }
     });
 

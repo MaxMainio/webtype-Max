@@ -260,7 +260,7 @@ h1{
     font-size: 24rem;
     font-variation-settings: 'wggl' var(--text-wiggle), 'hght' var(--text-height);
 
-font-weight: normal;
+    font-weight: normal;
 
     animation: fontanim 1s infinite;
     animation-timing-function: linear;
