@@ -1,0 +1,9 @@
+:root{
+    --almost-red:#d82f1f;
+    --almost-white:#f2f2f2;
+    --black: #000000;
+}
+
+*{
+    margin: 0;
+}
