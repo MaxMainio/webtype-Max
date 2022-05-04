@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "AVARSquareVF";
+    src: url('../assets/AVARSquareVF.woff2') format('woff2');
+}
+
+:root{
+    --almost-red:#d82f1f;
+}
