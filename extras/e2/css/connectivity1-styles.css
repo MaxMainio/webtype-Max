@@ -1,8 +1,22 @@
 @font-face {
-    font-family: "AVARSquareVF";
-    src: url('../assets/AVARSquareVF.woff2') format('woff2');
+    font-family: "Connectivity-v6";
+    src: url('../assets/Connectivity-v6.woff2') format('woff2');
 }
 
 :root{
     --almost-red:#d82f1f;
+}
+
+h5{
+    font-family: Connectivity-v6;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5rem;
+
+    text-transform: lowercase;
+    text-align: center;
+    /* direction: rtl; */
+    -webkit-font-feature-settings: "medi" 1;
+
+    color: black;
 }
