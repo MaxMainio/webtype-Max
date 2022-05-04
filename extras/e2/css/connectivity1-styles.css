@@ -16,6 +16,7 @@ h5{
     text-transform: lowercase;
     text-align: center;
     /* direction: rtl; */
+    font-feature-settings: "medi" 1;
     -webkit-font-feature-settings: "medi" 1;
 
     color: black;
