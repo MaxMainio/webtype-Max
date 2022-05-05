@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Tombj-vLogo";
-    src: url('../assets/Tombj-vLogo.woff2') format('woff2');
+    font-family: "Tomtbj-vLogo";
+    src: url('../assets/Tomtbj-vLogo.woff2') format('woff2');
 }
 
 :root{
@@ -20,7 +20,7 @@ p{
 }
 
 h5{
-    font-family: Tombj-vLogo;
+    font-family: Tomtbj-vLogo;
     font-style: normal;
     font-weight: normal;
     font-size: 36rem;
