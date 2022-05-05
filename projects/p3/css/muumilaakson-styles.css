@@ -75,7 +75,7 @@ html{
 }
 
 
-.metsä-korkeus{
+.metsa-korkeus{
     position: relative;
     height: 120vh;
 
@@ -84,29 +84,29 @@ html{
     background-repeat: repeat-x;
 }
 
-#taain-metsä{
+#taain-metsa{
     top: -1440px;
     z-index: 6;
 
-    background-image: url('../assets/Metsä/Taain-Metsä.svg');
+    background-image: url('../assets/Metsa/Taain-Metsa.svg');
 }
 
-#taka-metsä{
+#taka-metsa{
     z-index: 7;
 
-    background-image: url('../assets/Metsä/Taka-Metsä.svg');
+    background-image: url('../assets/Metsa/Taka-Metsa.svg');
 }
 
-#keski-metsä{
+#keski-metsa{
     z-index: 8;
 
-    background-image: url('../assets/Metsä/Keski-Metsä.svg');
+    background-image: url('../assets/Metsa/Keski-Metsa.svg');
 }
 
-#etu-metsä{
+#etu-metsa{
     z-index: 9;
 
-    background-image: url('../assets/Metsä/Etu-Metsä.svg');
+    background-image: url('../assets/Metsa/Etu-Metsa.svg');
 }
 
 
@@ -118,19 +118,19 @@ html{
 
 
 
-#mehä{
+#meha{
     background-color: var(--almost-gray);
     height: 100vh;
 }
 
-.mehä-korkeus{
+.meha-korkeus{
     height: 100vh;
 }
 
 #taka-alaosa{
     position: relative;
 
-    background-image: url('../assets/Kehä/Taka-Alaosa.svg');
+    background-image: url('../assets/Keha/Taka-Alaosa.svg');
     background-position: 0% 0%;
     background-size: contain;
     background-repeat: repeat-x;
@@ -149,7 +149,7 @@ html{
     width: 100%;
     height: 80%;
 
-    background-image: url('../assets/Kehä/Runko-3.svg');
+    background-image: url('../assets/Keha/Runko-3.svg');
     background-position: 0% 0%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -159,7 +159,7 @@ html{
     width: 100%;
     height: 70%;
 
-    background-image: url('../assets/Kehä/Runko-4.svg');
+    background-image: url('../assets/Keha/Runko-4.svg');
     background-position: 100% 0%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@ html{
     width: 100%;
     height: 75%;
 
-    background-image: url('../assets/Kehä/Runko-5.svg');
+    background-image: url('../assets/Keha/Runko-5.svg');
     background-position: 100% 0%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -203,7 +203,7 @@ html{
     width: 100%;
     height: 95%;
 
-    background-image: url('../assets/Kehä/Runko-1.svg');
+    background-image: url('../assets/Keha/Runko-1.svg');
     background-position: 0% 0%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -213,7 +213,7 @@ html{
     width: 100%;
     height: 98%;
 
-    background-image: url('../assets/Kehä/Runko-2.svg');
+    background-image: url('../assets/Keha/Runko-2.svg');
     background-position: 100% 0%;
     background-size: auto;
     background-repeat: no-repeat;
@@ -226,7 +226,7 @@ html{
     top: -300%;
     z-index: 10;
 
-    background-image: url('../assets/Kehä/Etu-Alaosa.svg');
+    background-image: url('../assets/Keha/Etu-Alaosa.svg');
     background-position: 0% 0%;
     background-size: auto;
     background-repeat: repeat-x;
@@ -237,7 +237,7 @@ html{
     z-index: 9;
     height: 50vh;
 
-    background-image: url('../assets/Kehä/Varjo.svg');
+    background-image: url('../assets/Keha/Varjo.svg');
     background-position: 0% 0%;
     background-size: auto;
     background-repeat: repeat-x;
