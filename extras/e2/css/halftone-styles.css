@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Half-Tone-VariableVF";
+    src: url('../assets/Half-Tone-VariableVF.woff2') format('woff2');
+}
+
+:root{
+    --almost-red:#d82f1f;
+}
+
+#main{
+    padding-right: 20%;
+    font-variation-settings: 'hftn' 0;
+    animation: fontanim 3s infinite alternate;
+    /* animation-timing-function: linear; */
+}
+
+#show-case{
+    margin-top: 0;
+}
+
+p{
+    margin-top: 0.4rem;
+}
+
+h5{
+    font-family: Half-Tone-VariableVF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36rem;
+    color: var(--almost-red);
+}
+
+@keyframes fontanim{
+    form{
+        font-variation-settings: 'hftn' 0;
+    }
+    to{
+        font-variation-settings: 'hftn' 100;
+    }
+}

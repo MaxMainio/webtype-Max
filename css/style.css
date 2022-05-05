@@ -37,6 +37,37 @@ body{
     transition: 1s;
 }
 
+#exercises{
+    margin: 2rem 0;
+}
+
+#projects{
+    margin: 2rem 0;
+}
+
+.listed{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+.when{
+    margin-bottom: 0.4rem;
+}
+
+.follow{
+    margin-top: 0.4rem;
+}
+
+#eye-mask{
+    position: absolute;
+    width: 240px;
+    fill: var(--bg);
+
+    transition: 1s;
+}
+
 /* Type */
 
 h1{
@@ -133,37 +164,6 @@ button{
     padding: 0;
 
     cursor: pointer;
-
-    transition: 1s;
-}
-
-#exercises{
-    margin: 2rem 0;
-}
-
-#projects{
-    margin: 2rem 0;
-}
-
-.listed{
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 2.5rem;
-    margin-top: 1rem;
-}
-
-.when{
-    margin-bottom: 0.4rem;
-}
-
-.follow{
-    margin-top: 0.4rem;
-}
-
-#eye-mask{
-    position: absolute;
-    width: 240px;
-    fill: var(--bg);
 
     transition: 1s;
 }
