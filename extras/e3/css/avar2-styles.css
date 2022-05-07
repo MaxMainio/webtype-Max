@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "AVARSquareVF";
-    src: url('../assets/AVARSquareVF.woff2') format('woff2');
+    font-family: "AVARSquare180";
+    src: url('../assets/AVARSquare180.woff2') format('woff2');
 }
 
 :root{
@@ -23,7 +23,7 @@ p{
 }
 
 h5{
-    font-family: AVARSquareVF;
+    font-family: AVARSquare180;
     font-style: normal;
     font-weight: normal;
     font-size: 36rem;
@@ -35,6 +35,6 @@ h5{
         font-variation-settings: 'wght' 0, 'wdth' 0;
     }
     to{
-        font-variation-settings: 'wght' 100, 'wdth' 100;
+        font-variation-settings: 'wght' 200, 'wdth' 200;
     }
 }

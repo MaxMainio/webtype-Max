@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "AVARSquare90";
+    src: url('../assets/AVARSquare90.woff2') format('woff2');
+}
+
+:root{
+    --almost-red:#d82f1f;
+}
+
+#main{
+    padding-right: 20%;
+    font-variation-settings: 'wght' 0, 'wdth' 0;
+    animation: fontanim 1s infinite alternate;
+    /* animation-timing-function: linear; */
+}
+
+#show-case{
+    margin-top: 0;
+}
+
+p{
+    margin-top: 0.4rem;
+}
+
+h5{
+    font-family: AVARSquare90;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36rem;
+    color: var(--almost-red);
+}
+
+@keyframes fontanim{
+    form{
+        font-variation-settings: 'wght' 0, 'wdth' 0;
+    }
+    to{
+        font-variation-settings: 'wght' 100, 'wdth' 100;
+    }
+}
