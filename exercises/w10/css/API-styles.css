@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "illegible";
+    src: url('../assets/Illegible-VF.woff2') format('woff2');
+}
+
+:root{
+    --almost-red:#d82f1f;
+    --almost-white:#f2f2f2;
+    --black: #000000;
+}
+
+body{
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main{
+    padding-right: 20%;
+}
+
+p{
+    margin-top: 0.4rem;
+}
