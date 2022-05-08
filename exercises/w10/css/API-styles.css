@@ -10,16 +10,22 @@
 }
 
 body{
-    height: 95vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#main{
     padding-right: 20%;
 }
 
 p{
     margin-top: 0.4rem;
+}
+
+.loading{
+    background-color: var(--almost-red);
+}
+
+#refresh{
+    cursor: pointer;
+}
+
+section{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }

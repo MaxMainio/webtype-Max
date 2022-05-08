@@ -5,27 +5,32 @@
     <title>Week 10 API Poems</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css"> </link>
     <link rel="stylesheet" type="text/css" href="css/API-styles.css"> </link>
-
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous">
-  </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/API-script.js"></script>
   </head>
   
   <body>
-    <section id="main">
-      <div class="header">
-        <h1>API POEMS</h1>
-        <h2>week 10 exercise</h2>
-        <p>Random Poems.</p>
+    <header>
+      <h1>API POEMS</h1>
+      <h2>week 10 exercise</h2>
+      <p id="refresh">Randomize Poem.</p>
+    </header>
+
+    <section id="poem">
+      <h1>
+      </h1>
+      
+      <div id="author">
       </div>
   
-      <div id="content">
-
-      </div>
+      <p>
+      </p>
     </section>
-  </body>
 
-  <script src="js/API-script.js"></script>
+    <footer>
+      <p id="colophon">
+        Random poems pulled from <a href="https://www.poemist.com/">Poemist</a> via the <a href="https://poemist.github.io/poemist-apidoc/">Poemist API</a>.
+      </p>
+    </footer>
+  </body>
 </html>
