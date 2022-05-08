@@ -27,6 +27,22 @@ h5{
     color: black;
 }
 
+#content{
+    --cross-offset: 0;
+    --curvature: 0;
+    --rspine: 0;
+    --lspine: 0;
+    --thickness: 0;
+
+    font-family: Tomtbj-vLogo;
+    font-variation-settings: 
+        'crso' var(--cross-offset),
+        'curv' var(--curvature),
+        'rspn' var(--rspine),
+        'lspn' var(--lspine),
+        'thck' var(--thickness);
+}
+
 #interact{
     bottom: 0;
     margin-top: 2.4rem;
@@ -58,15 +74,11 @@ h5{
 
 .context{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .left{
     justify-self: left;
-}
-
-.center{
-    justify-self: center;
 }
 
 .right{

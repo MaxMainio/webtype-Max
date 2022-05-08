@@ -5,6 +5,8 @@
     <title>Extra 1 vLogo</title>
     <link rel="stylesheet" type="text/css" href="../../css/style.css"> </link>
     <link rel="stylesheet" type="text/css" href="css/vLogo-styles.css"> </link>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/vLogo-script.js"></script>
   </head>
   
   <body>
@@ -39,51 +41,46 @@
 
     <section id="interact">
       <div id="cross-offset-slider">
-        <input type="range" id="weight" min="0" max="100" value="0" id="weight" class="slider">
+        <input type="range" id="cross-offset" min="0" max="100" value="0" id="cross-offset" class="slider">
         
         <div class="context">
           <p class="left">^ High Cross</p>
-          <p class="center"><span id="weight-value"></span></p>
           <p class="right">Low Cross ^</p>
         </div>
       </div>
 
       <div id="curvature-slider" class="follow">
-        <input type="range" id="width" min="0" max="100" value="0" id="width" class="slider">
+        <input type="range" id="curvature" min="0" max="100" value="0" id="curvature" class="slider">
         
         <div class="context">
           <p class="left">^ Less Curvature</p>
-          <p class="center"><span id="width-value"></span></p>
           <p class="right">More Curvature ^</p>
         </div>
       </div>
 
       <div id="rspine-slider" class="follow">
-        <input type="range" id="width" min="0" max="100" value="0" id="width" class="slider">
+        <input type="range" id="rspine" min="0" max="100" value="0" id="rspine" class="slider">
         
         <div class="context">
           <p class="left">^ Right Spine to the Left</p>
-          <p class="center"><span id="width-value"></span></p>
           <p class="right">Right Spine to the Right ^</p>
         </div>
       </div>
 
       <div id="lspine-slider" class="follow">
-        <input type="range" id="width" min="0" max="100" value="0" id="width" class="slider">
+        <input type="range" id="lspine" min="0" max="100" value="0" id="lspine" class="slider">
         
         <div class="context">
           <p class="left">^ Left Spine to the Left</p>
-          <p class="center"><span id="width-value"></span></p>
           <p class="right">Left Spine to the Right ^</p>
         </div>
       </div>
 
-      <div id="thiickness-slider" class="follow">
-        <input type="range" id="width" min="0" max="100" value="0" id="width" class="slider">
+      <div id="thickness-slider" class="follow">
+        <input type="range" id="thickness" min="0" max="100" value="0" id="thickness" class="slider">
         
         <div class="context">
           <p class="left">^ Thin</p>
-          <p class="center"><span id="width-value"></span></p>
           <p class="right">Thick ^</p>
         </div>
       </div>
