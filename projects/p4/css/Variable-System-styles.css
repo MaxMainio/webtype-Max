@@ -9,13 +9,22 @@
 }
 
 body{
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 1rem;
+    height: calc(100vh - 2rem);
 }
 
-#generator{
-    width: auto;
+header{
+    display: flex;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#title{
+    text-transform: none;
 }
