@@ -56,8 +56,20 @@ button{
     padding-left: 1rem;
     padding-right: 1rem;
     cursor: pointer;
+
+    font-size: 1.4rem;
+}
+
+select{
+    font-size: 1.4rem;
 }
 
 p{
     font-size: 1.6rem;
+}
+
+@media (max-width: 1000px){
+    html{
+        font-size: 130%;
+    }
 }
