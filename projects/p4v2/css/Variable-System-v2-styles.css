@@ -24,7 +24,7 @@ body{
 
 header{
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
 
     margin-bottom: 1rem;
 }
