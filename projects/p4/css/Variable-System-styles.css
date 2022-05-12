@@ -39,6 +39,10 @@ footer{
     margin-top: 1rem;
 }
 
+select{
+    cursor: pointer;
+}
+
 h1{
     font-size: 3rem;
 }
@@ -48,9 +52,9 @@ h2{
     font-size: 2.4rem;
 }
 
-h3{
-    margin-top: 1.2rem;
-    font-size: 1.8rem;
+button{
+    padding-left: 1rem;
+    padding-right: 1rem;
     cursor: pointer;
 }
 
