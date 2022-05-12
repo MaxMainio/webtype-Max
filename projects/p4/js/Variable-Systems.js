@@ -21,11 +21,32 @@ $(document).ready(function(){
   
   function displayPoem(poemIndex){
     let poem = poemList[poemIndex];
-    let text = poem["content"].replace(/\n/g, "<br />");
     let author = poem["poet"]; // object with name: nameofauthor, url: urlofauthor
-    $('#poem').html(poem["title"]);
+
+    let text = poem["content"];
+    var sentance = text.split(/\n/);
+    var words = [];
+
+    for (var i = 0; i < sentance.length; i++) {
+      var temp = sentance[i].split(/\s/);
+      words.push(temp);
+    }
+
+    htmlWrite = "";
+
+    for (var i = 0; i < words.length; i++) {
+      htmlWrite = htmlWrite + "<select>";
+      for (var j = 0; j < words[i].length; j++) {
+        htmlWrite = htmlWrite + "<option>" + words[i][j] + "</option>";
+      }
+      htmlWrite = htmlWrite + "</select>";
+    }
+
+    $('#title').html(poem["title"]);
     $('#author').html('<a href="'+author["url"]+'" target="_blank">'+author["name"]+'</a>');
-    $('#poem p').html(text);
+    $('#refresh').html('refresh');
+
+    $('#poem').append(htmlWrite);
   }
 
   $("#refresh").click(function(){

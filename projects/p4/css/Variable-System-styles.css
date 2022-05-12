@@ -28,3 +28,12 @@ section{
 #title{
     text-transform: none;
 }
+
+h3{
+    cursor: pointer;
+}
+
+footer{
+    position: absolute;
+    bottom: 1rem;
+}
