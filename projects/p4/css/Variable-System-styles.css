@@ -17,9 +17,14 @@ body{
     height: calc(100vh - 2rem);
 }
 
-header{
+.info{
     display: flex;
     gap: 2rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
 
     margin-bottom: 1rem;
 }

@@ -44,12 +44,13 @@ $(document).ready(function(){
 
     $('#title').html(poem["title"]);
     $('#author').html('<a href="'+author["url"]+'" target="_blank">'+author["name"]+'</a>');
-    $('#refresh').html('more');
+    $('#more').html('more');
+    $('#refresh').html('refresh');
 
     $('#poem').append(htmlWrite);
   }
 
-  $("#refresh").click(function(){
+  $("#more").click(function(){
 
     if( !$('body').hasClass('loading') ){
        // only display poem if JSON from API has fully loaded
