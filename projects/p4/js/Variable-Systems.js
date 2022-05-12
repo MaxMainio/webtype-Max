@@ -44,7 +44,7 @@ $(document).ready(function(){
 
     $('#title').html(poem["title"]);
     $('#author').html('<a href="'+author["url"]+'" target="_blank">'+author["name"]+'</a>');
-    $('#refresh').html('refresh');
+    $('#refresh').html('more');
 
     $('#poem').append(htmlWrite);
   }
