@@ -12,7 +12,34 @@
       <div class="header">
         <h1>CONNECTIVITY</h1>
         <h2>extra 4</h2>
-        <p>Trying to create a connected font.</p>
+        <p>
+          Trying to create a connected font.<br>
+          I am using Helvetica as a start so I don't have to create the entire set glyph from scratch.<br>
+        </p>
+
+        <p>
+          In the beginning I created ligatures for as many character combinations as I could, but it was clearly not an effect way of going about this project.
+        </p>
+
+        <p>
+          In this version I am using #enter and #exit anchors with automatic alignment.<br>
+          Only issue is, these were developed for arabic scripts that not only almost always connect, but also read right to left.<br>
+          Because of this, the text that reads "commitment" is actually written here in the HTML as "tnemtimmoc."<br>
+          Each character has an Initial (.init), Medial (.medi), Final (.fina), and an Isolated (.isol) form.<br>
+          In theory each should be desplayed based on it's location in a string of characters. Whether it is the first or last character, it's inbetween two characters, or if it's alone.<br>
+          This works in Glyphs3, but here on the internet I had to apply the <i>"-webkit-font-feature-settings: "medi" 1;"</i> to them all and haven't figure out how to get them to change independantly.
+        </p>
+
+        <p>
+          More will come...<br>
+          I am relentless!<br>
+          I will win this!<br>
+        </p>
+
+        <p>
+          I have experimented with smart components and I believe they hold the answeres to the final version of this font.<br>
+          Those and additional versions of .init, .medi, .fina, .isol character forms.
+        </p>
       </div>
 
       <div id="show-case">

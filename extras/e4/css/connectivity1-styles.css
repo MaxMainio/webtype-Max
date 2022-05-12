@@ -7,6 +7,20 @@
     --almost-red:#d82f1f;
 }
 
+section{
+    display: flex;
+}
+
+#show-case{
+    width: 100%;
+}
+
+p{
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    width: 50ch;
+}
+
 h5{
     font-family: Connectivity-v6;
     font-style: normal;
