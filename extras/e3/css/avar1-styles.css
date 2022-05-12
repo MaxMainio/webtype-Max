@@ -3,6 +3,10 @@
     src: url('../assets/AVARSquare90.woff2') format('woff2');
 }
 
+*{
+    transition: 0;
+}
+
 :root{
     --almost-red:#d82f1f;
 }
