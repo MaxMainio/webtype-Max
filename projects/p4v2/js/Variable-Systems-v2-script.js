@@ -44,13 +44,17 @@ $(document).ready(function(){
 
     $('#title').html(poem["title"]);
     $('#author').html('<a href="'+author["url"]+'" target="_blank">'+author["name"]+'</a>');
-    $('#more').html('more');
+
+    $('#append').html('append');
+    $('#randomize').html('randomize');
+    $('#print').html('print');
+    $('#block').html('block');
     $('#refresh').html('refresh');
 
     $('#poem').append(htmlWrite);
   }
 
-  $("#more").click(function(){
+  $("#append").click(function(){
 
     if( !$('body').hasClass('loading') ){
        // only display poem if JSON from API has fully loaded

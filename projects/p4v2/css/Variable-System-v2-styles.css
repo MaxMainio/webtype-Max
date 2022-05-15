@@ -17,37 +17,71 @@ body{
     height: calc(100vh - 2rem);
 }
 
-.info{
-    display: flex;
-    gap: 2rem;
+/* poem */
+
+#viewport{
+    height: 70%;
+    overflow: scroll;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-
-    margin-bottom: 1rem;
-}
-
-section{
+#poem{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1rem;
+}
+
+select{
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer{
+    height: 30%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+    position: fixed;
+    bottom: 1rem;
+    margin-top: 1rem;
+
+    background-color: white;
+}
+
+/* #about{
+    margin-top: -1rem;
+} */
+
+#info{
+    padding-top: 1rem;
+}
+
+.creator{
+    display: flex;
+    justify-content: space-between;
+}
+
+.creator:hover{
+    background-color: var(--almost-white);
+}
+
+.names{
+    display: flex;
+    gap: 1rem;
 }
 
 #title{
     text-transform: none;
 }
 
-footer{
-    position: fixed;
-    bottom: 1rem;
-    margin-top: 1rem;
+#buttons{
+    padding-top: 1rem;
 }
 
-select{
-    cursor: pointer;
-}
+/* Type */
 
 h1{
     font-size: 3rem;
@@ -72,10 +106,4 @@ select{
 
 p{
     font-size: 1.6rem;
-}
-
-@media (max-width: 1000px){
-    html{
-        font-size: 130%;
-    }
 }
