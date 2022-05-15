@@ -76,12 +76,28 @@ $(document).ready(function(){
 
     $('select').toggleClass('blockmode');
 
-    // if( !$('select').hasClass('blockmode') ){
-    //   !$('select').removeClass('blockmode');
-    // }else{
-    //   !$('select').addClass('blockmode');
-    // }
+    if( !$('select').hasClass('blockmode') ){
+      !$('select').removeClass('blockmode');
+    }else{
+      !$('select').addClass('blockmode');
+    }
          
   });
+
+  // $("#block").click(function(){
+
+  //   if( !$('body').hasClass('loading') ){
+  //      // only display poem if JSON from API has fully loaded
+
+  //      if(poemCount < 4){        
+  //        poemCount ++; // increment poem index until 5
+  //        displayPoem(poemCount);
+  //      }else{
+  //        getPoem(); // get new batch of poems
+  //        poemCount = 0; // reset poem index
+  //      }
+  //   }
+         
+  // });
 
 });
