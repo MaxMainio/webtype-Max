@@ -72,4 +72,16 @@ $(document).ready(function(){
   
   getPoem();
 
+  $("#block").click(function(){
+
+    $('select').toggleClass('blockmode');
+
+    // if( !$('select').hasClass('blockmode') ){
+    //   !$('select').removeClass('blockmode');
+    // }else{
+    //   !$('select').addClass('blockmode');
+    // }
+         
+  });
+
 });
