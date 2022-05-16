@@ -33,8 +33,6 @@ body{
     margin: 2.4rem;
     padding: 0;
     background: var(--bg);
-
-    transition: 1s;
 }
 
 #exercises{
@@ -64,8 +62,6 @@ body{
     position: absolute;
     width: 240px;
     fill: var(--bg);
-
-    transition: 1s;
 }
 
 /* Type */
@@ -77,8 +73,6 @@ h1{
     font-size: 3.2rem;
 
     color: var(--type);
-
-    transition: 1s;
 }
 
 h2{
@@ -88,8 +82,6 @@ h2{
     font-size: 2.5rem;
 
     color: var(--almost-red);
-
-    transition: 1s;
 }
 
 h3{
@@ -99,8 +91,6 @@ h3{
     font-size: 2.1rem;
 
     color: var(--type);
-
-    transition: 1s;
 }
 
 h4{
@@ -110,8 +100,6 @@ h4{
     font-size: 1.6rem;
 
     color: var(--type);
-
-    transition: 1s;
 }
 
 p{
@@ -122,8 +110,6 @@ p{
     line-height: 2rem;
 
     color: var(--type);
-
-    transition: 1s;
 }
 
 ol{
@@ -133,8 +119,6 @@ ol{
     font-size: 1.6rem;
 
     color: var(--type);
-
-    transition: 1s;
 }
 
 a{
@@ -147,8 +131,6 @@ a{
     text-decoration: none;
 
     margin-right: 0.5rem;
-
-    transition: 1s;
 }
 
 button{
@@ -165,6 +147,4 @@ button{
     padding: 0;
 
     cursor: pointer;
-
-    transition: 1s;
 }
