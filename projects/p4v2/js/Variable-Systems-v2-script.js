@@ -8,14 +8,14 @@ $(document).ready(function(){
 
   function getPoem( ){
     
-    $('body').addClass('loading');
+    $('header').addClass('loading');
 
     $.getJSON("https://www.poemist.com/api/v1/randompoems")
       .done(function( data ) {
           console.log(data);
           poemList = data; // get poem data
           displayPoem(0);  // display first poem
-          $('body').removeClass('loading');
+          $('header').removeClass('loading');
         });
   }  
   
@@ -51,7 +51,7 @@ $(document).ready(function(){
 
   $("#append").click(function(){
 
-    if( !$('body').hasClass('loading') ){
+    if( !$('header').hasClass('loading') ){
        // only display poem if JSON from API has fully loaded
 
        if(poemCount < 4){        
