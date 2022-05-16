@@ -45,13 +45,8 @@ $(document).ready(function(){
     $('#title').html(poem["title"]);
     $('#author').html('<a href="'+author["url"]+'" target="_blank">'+author["name"]+'</a>');
 
-    $('#append').html('append');
-    $('#randomize').html('randomize');
-    $('#print').html('print');
-    $('#block').html('block');
-    $('#refresh').html('refresh');
-
     $('#poem').append(htmlWrite);
+    $('#index').html(poemCount +1)
   }
 
   $("#append").click(function(){
@@ -83,21 +78,5 @@ $(document).ready(function(){
     }
          
   });
-
-  // $("#block").click(function(){
-
-  //   if( !$('body').hasClass('loading') ){
-  //      // only display poem if JSON from API has fully loaded
-
-  //      if(poemCount < 4){        
-  //        poemCount ++; // increment poem index until 5
-  //        displayPoem(poemCount);
-  //      }else{
-  //        getPoem(); // get new batch of poems
-  //        poemCount = 0; // reset poem index
-  //      }
-  //   }
-         
-  // });
 
 });
