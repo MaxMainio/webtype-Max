@@ -1,3 +1,7 @@
+*{
+    transition: none;
+}
+
 article{
     max-width: 40em;
 	margin: auto;
