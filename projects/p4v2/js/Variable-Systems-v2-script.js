@@ -6,7 +6,7 @@ let poemCount = 0;
 
 $(document).ready(function(){
 
-  function getPoem( ){
+  function getPoem(){
     
     $('header').addClass('loading');
 

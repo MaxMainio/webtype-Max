@@ -1,9 +1,16 @@
 @font-face {
     font-family: "Block1-Regular";
     src: url('../assets/Block1-Regular.woff2') format('woff2');
+}
 
+@font-face {
     font-family: "Block2-Regular";
     src: url('../assets/Block2-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Block3-Regular";
+    src: url('../assets/Block3-Regular.woff2') format('woff2');
 }
 
 :root{
