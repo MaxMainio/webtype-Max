@@ -139,3 +139,37 @@ p{
     font-weight: normal;
     font-size: 1.3rem;
 }
+
+/* Queries */
+
+@media print{
+    @page{
+        size: auto;
+        margin: 0mm;
+    }
+
+    header{
+        display: none;
+    }
+
+    h3{
+        display: none;
+    }
+
+    #viewport{
+        height: 100%;
+        overflow: visible;
+    }
+
+    select{
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer{
+        display: none;
+    }
+}
