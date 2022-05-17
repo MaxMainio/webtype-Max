@@ -23,6 +23,9 @@ $(document).ready(function(){
     let poem = poemList[poemIndex];
     let author = poem["poet"]; // object with name: nameofauthor, url: urlofauthor
 
+
+
+
     let text = poem["content"];
     var sentance = text.split(/\n/);
     var words = [];
@@ -32,20 +35,22 @@ $(document).ready(function(){
       words.push(temp);
     }
 
-    htmlWrite = "";
+    poemWrite = "";
 
     for (var i = 0; i < words.length; i++) {
-      htmlWrite = htmlWrite + "<select>";
+      poemWrite = poemWrite + "<select>";
       for (var j = 0; j < words[i].length; j++) {
-        htmlWrite = htmlWrite + "<option>" + words[i][j] + "</option>";
+        poemWrite = poemWrite + "<option>" + words[i][j] + "</option>";
       }
-      htmlWrite = htmlWrite + "</select>";
+      poemWrite = poemWrite + "</select>";
     }
 
-    $('#title').html(poem["title"]);
+
+
+    $('#title').html(poem["title"] + ' ' + '<a href="'+author["url"]+'" target="_blank">'+author["name"]+'</a>');
     $('#author').html('<a href="'+author["url"]+'" target="_blank">'+author["name"]+'</a>');
 
-    $('#poem').append(htmlWrite);
+    $('#poem').append(poemWrite);
     $('#index').html(poemCount +1)
   }
 

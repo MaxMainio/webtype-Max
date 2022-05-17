@@ -93,11 +93,6 @@ footer{
     background-color: var(--almost-white);
 }
 
-.names{
-    display: flex;
-    gap: 1rem;
-}
-
 #title{
     text-transform: none;
 }
