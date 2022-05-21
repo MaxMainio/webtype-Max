@@ -12,6 +12,8 @@
     --almost-red:#d82f1f;
 }
 
+/* Elements */
+
 section{
     display: flex;
 }
@@ -22,19 +24,11 @@ section{
     justify-content: center;
 }
 
-p{
-    margin-top: 0.4rem;
-    margin-bottom: 1rem;
-    width: 50ch;
-}
-
-a{
-    margin: 0;
-}
-
 #text{
     width: 65rem;
 }
+
+/* Type */
 
 h5{
     position: absolute;
@@ -52,4 +46,14 @@ h5{
     font-style: normal;
     font-weight: normal;
     font-size: 25rem;
+}
+
+p{
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    width: 50ch;
+}
+
+a{
+    margin: 0;
 }
