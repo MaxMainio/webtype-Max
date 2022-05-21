@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "OUP-IMG";
+    src: url('../assets/OUP3-IMG.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "OUP-Regular";
+    src: url('../assets/OUP3-Regular.woff2') format('woff2');
+}
+
+:root{
+    --almost-red:#d82f1f;
+}
+
+section{
+    display: flex;
+}
+
+#show-case{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    width: 50ch;
+}
+
+a{
+    margin: 0;
+}
+
+#text{
+    width: 65rem;
+}
+
+h5{
+    position: absolute;
+}
+
+#img{
+    font-family: OUP-IMG;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25rem;
+}
+
+#regular{
+    font-family: OUP-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25rem;
+}
