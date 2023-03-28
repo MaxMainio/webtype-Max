@@ -1,0 +1,198 @@
+/* Imports -------------------------------------------------------------------------------------------- */
+@font-face {
+    font-family: "Block1-Regular";
+    src: url('../assets/Block1-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Block2-Regular";
+    src: url('../assets/Block2-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: "Block3-Regular";
+    src: url('../assets/Block3-Regular.woff2') format('woff2');
+}
+
+
+
+
+
+
+
+
+
+/* HTML ----------------------------------------------------------------------------------------------- */
+:root{
+    --almost-red:#d82f1f;
+    --almost-white:#f2f2f2;
+    --black: #000000;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr;
+    gap: 1rem;
+}
+
+header{
+    display: none;
+    position: fixed;
+    height: calc(100% - 2rem);
+    width: calc(100% - 2rem);
+    pointer-events: none;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    grid-column: 1 / 4;
+    overflow: scroll;
+}
+
+#index{
+    overflow: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* poem */
+#viewport{
+    height: 70%;
+    overflow: scroll;
+}
+
+#poem{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+select{
+    cursor: pointer;
+}
+
+.creator{
+    display: flex;
+    justify-content: space-between;
+}
+
+.creator:hover{
+    background-color: var(--almost-white);
+}
+
+
+
+
+
+
+
+
+
+/* Type ----------------------------------------------------------------------------------------------- */
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-top: 0.6rem;
+}
+
+h3{
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+
+    color: white;
+    background-color: black;
+}
+
+button{
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+}
+
+select{
+    font-size: 0.8rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.blockmode{
+    font-family: Block2-Regular;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+/* Queries -------------------------------------------------------------------------------------------- */
+@media print{
+    @page{
+        size: auto;
+        margin: 0mm;
+    }
+
+    header{
+        display: none;
+    }
+
+    h3{
+        display: none;
+    }
+
+    #viewport{
+        height: 100%;
+        overflow: visible;
+    }
+
+    select{
+        appearance: none;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer{
+        display: none;
+    }
+}
