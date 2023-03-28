@@ -26,6 +26,7 @@
 :root{
     --almost-red:#d82f1f;
     --almost-white:#f2f2f2;
+    --off-white: #fafafa;
     --black: #000000;
 }
 
@@ -68,6 +69,19 @@ main{
     overflow: scroll;
 }
 
+.creator{
+    display: flex;
+    justify-content: space-between;
+}
+
+.creator:nth-child(even){
+    background-color: var(--off-white);
+}
+
+.creator:hover{
+    background-color: var(--almost-white);
+}
+
 
 
 
@@ -99,15 +113,6 @@ main{
 
 select{
     cursor: pointer;
-}
-
-.creator{
-    display: flex;
-    justify-content: space-between;
-}
-
-.creator:hover{
-    background-color: var(--almost-white);
 }
 
 
