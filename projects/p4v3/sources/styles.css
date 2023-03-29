@@ -27,7 +27,8 @@
     --almost-red:#d82f1f;
     --almost-white:#f2f2f2;
     --off-white: #fafafa;
-    --black: #000000;
+    --darker-white: #ccc;
+    --black: #000;
 }
 
 *{
@@ -88,9 +89,9 @@ main{
 
 
 
-.chain{
-    display: inline;
-    background-color: #d82f1f;
+.hovering{
+    background-color: var(--darker-white);
+    
 }
 
 

@@ -66,18 +66,12 @@ function displayPoem(poemIndex){
   poemWrite = '';
 
   for (var i = 0; i < words.length; i++){
-    poemWrite = poemWrite + '<select>';
+    poemWrite = poemWrite + '<select data-poem-modal="' + poem['tag'] + '">';
     for (var j = 0; j < words[i].length; j++){
       poemWrite = poemWrite + '<option>' + words[i][j] + '</option>';
     }
     poemWrite = poemWrite + '</select>';
   }
-
-  // var poemDiv = document.createElement('div');
-  // poemDiv.setAttribute('class', 'chain');
-  // poemDiv.setAttribute('data-poem', poem['title']);
-  // poemDiv.insertAdjacentHTML('beforeend', poemWrite);
-  // poemSpace.appendChild(poemDiv);
 
   poemSpace.insertAdjacentHTML("beforeend", poemWrite);
   updateIndex(author, poem, poemIndex);
@@ -94,13 +88,37 @@ function displayPoem(poemIndex){
 function updateIndex(author, poem, poemIndex){
   var authorCard = document.createElement('div');
   authorCard.setAttribute('class', 'author');
-  authorCard.setAttribute('data-poem', poem['title']);
+  authorCard.setAttribute('data-poem-index', poem['tag']);
 
   var poemIndex = poemIndex + 1;
 
   authorCard.innerHTML = '<p><a href="' + author['url'] + '" target="_blank">' + author['name'] + '</a></p><p>' + poemIndex + '</p>'
 
   indexList.appendChild(authorCard);
+  updateIndexList();
+}
+
+
+
+
+function updateIndexList(){
+  document.querySelectorAll('[data-poem-index').forEach(item => {
+    item.addEventListener('mouseover', event => {
+      var hovering = event.target.dataset.poemIndex;
+      
+      document.querySelectorAll('[data-poem-modal=' + hovering + ']').forEach((element) => {
+        element.classList.add('hovering');
+      });
+    });
+
+    item.addEventListener('mouseout', event => {
+      var hovering = event.target.dataset.poemIndex;
+      
+      document.querySelectorAll('[data-poem-modal=' + hovering + ']').forEach((element) => {
+        element.classList.remove('hovering');
+      });
+    });
+  });
 }
 
 
