@@ -69,16 +69,16 @@ main{
     overflow: scroll;
 }
 
-.creator{
+.author{
     display: flex;
     justify-content: space-between;
 }
 
-.creator:nth-child(even){
+.author:nth-child(even){
     background-color: var(--off-white);
 }
 
-.creator:hover{
+.author:hover{
     background-color: var(--almost-white);
 }
 
@@ -154,6 +154,10 @@ select{
 
 p{
     font-size: 1rem;
+}
+
+a{
+    cursor: pointer;
 }
 
 .blockmode{

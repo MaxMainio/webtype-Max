@@ -1,14 +1,44 @@
 console.log("https://www.youtube.com/watch?v=NuAKnbIr6TE");
 
+var loadingMark = document.getElementById('loading-mark');
+var firstIndex = document.getElementById('first-index');
+
+const poemSpace = document.getElementById('poem-space');
+const indexList = document.getElementById('index');
+
+var poemList = [];
+var poemCount = 0;
+
+
+
+
+
+
+
+
+
 window.onload = (event) => {
   getPoem();
 }
+
+
+
+
+
+
+
+
 
 function getPoem() {
   fetch('https://maxmainio.github.io/webtype-Max/projects/p4v3/sources/data.json')
     .then((response) => response.json())
     .then((json) => {
-      console.log(json);
+      shuffle(json);
+      poemList = json;
+      displayPoem(0);
+
+      loadingMark.classList.remove('loading');
+      firstIndex.remove();
     });
 }
 
@@ -20,55 +50,57 @@ function getPoem() {
 
 
 
+function displayPoem(poemIndex){
+  let poem = poemList[poemIndex];
 
+  let author = poem['poet'];
+  let text = poem['content'];
+  var phrase = text.split(/\n/);
+  var words = [];
 
+  for (var i = 0; i < phrase.length; i++){
+    var temp = phrase[i].split(/\s/);
+    words.push(temp);
+  }
 
+  poemWrite = '';
 
-
-// let poemList = [];
-// let poemCount = 0;
-
-
-// $(document).ready(function(){
-
-//   function getPoem(){
-    
-//     $('header').addClass('loading');
-
-//     $.getJSON("https://www.poemist.com/api/v1/randompoems")
-//       .done(function( data ) {
-//           console.log(data);
-//           poemList = data; // get poem data
-//           displayPoem(0);  // display first poem
-//           $('header').removeClass('loading');
-//         });
-//   }  
+  for (var i = 0; i < words.length; i++){
+    poemWrite = poemWrite + '<select>';
+    for (var j = 0; j < words[i].length; j++){
+      poemWrite = poemWrite + '<option>' + words[i][j] + '</option>';
+    }
+    poemWrite = poemWrite + '</select>';
+  }
   
-//   function displayPoem(poemIndex){
-//     let poem = poemList[poemIndex];
-//     let author = poem["poet"]; // object with name: nameofauthor, url: urlofauthor
+  poemSpace.insertAdjacentHTML("beforeend", poemWrite);
+  updateIndex(author, poem, poemIndex);
+}
 
 
 
 
-//     let text = poem["content"];
-//     var sentance = text.split(/\n/);
-//     var words = [];
 
-//     for (var i = 0; i < sentance.length; i++) {
-//       var temp = sentance[i].split(/\s/);
-//       words.push(temp);
-//     }
 
-//     poemWrite = "";
 
-//     for (var i = 0; i < words.length; i++) {
-//       poemWrite = poemWrite + "<select>";
-//       for (var j = 0; j < words[i].length; j++) {
-//         poemWrite = poemWrite + "<option>" + words[i][j] + "</option>";
-//       }
-//       poemWrite = poemWrite + "</select>";
-//     }
+
+
+function updateIndex(author, poem, poemIndex){
+  var authorCard = document.createElement('div');
+  authorCard.setAttribute('class', 'author');
+  authorCard.setAttribute('data-poem', poem['title']);
+
+  var poemIndex = poemIndex + 1;
+
+  authorCard.innerHTML = '<p><a href="' + author['url'] + '" target="_blank">' + author['name'] + '</a></p><p>' + poemIndex + '</p>'
+
+  indexList.appendChild(authorCard);
+}
+
+
+
+
+
 
 
 
@@ -111,3 +143,29 @@ function getPoem() {
 //   });
 
 // });
+
+
+
+
+
+
+
+
+
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
