@@ -27,7 +27,7 @@
     --almost-red:#d82f1f;
     --almost-white:#f2f2f2;
     --off-white: #fafafa;
-    --darker-white: #ccc;
+    --darker-white: #eee;
     --black: #000;
 }
 
@@ -91,7 +91,7 @@ main{
 
 .hovering{
     background-color: var(--darker-white);
-    
+
 }
 
 

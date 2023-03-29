@@ -6,6 +6,12 @@ var firstIndex = document.getElementById('first-index');
 const poemSpace = document.getElementById('poem-space');
 const indexList = document.getElementById('index');
 
+const appendBtn = document.getElementById('append');
+const randomizeBtn = document.getElementById('randomize');
+const printBtn = document.getElementById('print');
+const blockBtn = document.getElementById('block');
+const refreshBtn = document.getElementById('refresh');
+
 var poemList = [];
 var poemCount = 0;
 
@@ -35,7 +41,7 @@ function getPoem() {
     .then((json) => {
       shuffle(json);
       poemList = json;
-      displayPoem(0);
+      displayPoem(poemCount);
 
       loadingMark.classList.remove('loading');
       firstIndex.remove();
@@ -75,6 +81,8 @@ function displayPoem(poemIndex){
 
   poemSpace.insertAdjacentHTML("beforeend", poemWrite);
   updateIndex(author, poem, poemIndex);
+
+  poemCount++
 }
 
 
@@ -101,9 +109,14 @@ function updateIndex(author, poem, poemIndex){
 
 
 
+
+
+
+
+
 function updateIndexList(){
   document.querySelectorAll('[data-poem-index').forEach(item => {
-    item.addEventListener('mouseover', event => {
+    item.addEventListener('mouseenter', event => {
       var hovering = event.target.dataset.poemIndex;
       
       document.querySelectorAll('[data-poem-modal=' + hovering + ']').forEach((element) => {
@@ -111,7 +124,7 @@ function updateIndexList(){
       });
     });
 
-    item.addEventListener('mouseout', event => {
+    item.addEventListener('mouseleave', event => {
       var hovering = event.target.dataset.poemIndex;
       
       document.querySelectorAll('[data-poem-modal=' + hovering + ']').forEach((element) => {
@@ -119,7 +132,7 @@ function updateIndexList(){
       });
     });
   });
-}
+};
 
 
 
@@ -129,12 +142,19 @@ function updateIndexList(){
 
 
 
-//     $('#title').html(poem["title"] + ' ' + '<a href="'+author["url"]+'" target="_blank">'+author["name"]+'</a>');
-//     $('#author').html('<a href="'+author["url"]+'" target="_blank">'+author["name"]+'</a>');
+appendBtn.addEventListener('click', event => {
+  displayPoem(poemCount);
+});
 
-//     $('#poem').append(poemWrite);
-//     $('#index').html(poemCount +1)
-//   }
+
+
+
+
+
+
+
+
+
 
 //   $("#append").click(function(){
 
