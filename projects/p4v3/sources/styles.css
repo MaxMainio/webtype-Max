@@ -27,7 +27,7 @@
     --almost-red:#d82f1f;
     --almost-white:#f2f2f2;
     --off-white: #fafafa;
-    --darker-white: #eee;
+    --darker-white: #ddd;
     --black: #000;
 }
 
@@ -61,10 +61,26 @@ header{
     align-items: center;
 }
 
+
+
+
+
 main{
     grid-column: 1 / 4;
     overflow: scroll;
 }
+
+select{
+    cursor: pointer;
+}
+
+.hovering{
+    background-color: var(--darker-white);
+}
+
+
+
+
 
 #index{
     overflow: scroll;
@@ -81,49 +97,6 @@ main{
 
 .author:hover{
     background-color: var(--almost-white);
-}
-
-
-
-
-
-
-
-.hovering{
-    background-color: var(--darker-white);
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* poem */
-#viewport{
-    height: 70%;
-    overflow: scroll;
-}
-
-#poem{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1rem;
-}
-
-select{
-    cursor: pointer;
 }
 
 
@@ -187,21 +160,15 @@ a{
 /* Queries -------------------------------------------------------------------------------------------- */
 @media print{
     @page{
-        size: auto;
-        margin: 0mm;
+        margin: 0;
     }
 
     header{
         display: none;
     }
 
-    h3{
+    .interactive{
         display: none;
-    }
-
-    #viewport{
-        height: 100%;
-        overflow: visible;
     }
 
     select{
@@ -210,9 +177,5 @@ a{
         border: none;
         padding: 0;
         margin: 0;
-    }
-
-    footer{
-        display: none;
     }
 }

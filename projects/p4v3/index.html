@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Generative? Poems</title>
-    <link rel="stylesheet" type="text/css" href="sources/styles.css"> </link>
+    <link rel="stylesheet" type="text/css" href="sources/styles.css"></link>
     <script src="sources/script.js" defer></script>
   </head>
   
@@ -12,11 +12,9 @@
       <h3>Loading...</h3>
     </header>
 
-    <main id="poem-space">
+    <main id="poem-space"></main>
 
-    </main>
-
-    <div>
+    <div class="interactive">
       <h1>about <i>Generative?</i> Poems</h1>
       <p>
         <i>Generative?</i> Poems is an experimental, <i>work in progress</i>, website that pulls random poems from <a href="https://www.poemist.com/" target="_blank">Poemist</a> via the <a href="https://poemist.github.io/poemist-apidoc/" target="_blank">Poemist API</a>.
@@ -25,17 +23,17 @@
       </p>
     </div>
 
-    <div id="index">
+    <div id="index" class="interactive">
       <div id="first-index" class="author">
         <p>Loading...</p>
         <p>i</p>
       </div>
     </div>
 
-    <div>
+    <div class="interactive">
       <button type="button" id="append">append</button>
       <button type="button" id="randomize">randomize</button>
-      <button type="button" id="print" onclick="window.print()">print</button>
+      <button type="button" id="print">print</button>
       <button type="button" id="block">block</button>
       <button type="button" id="refresh" onClick="window.location.reload();">refresh</button>
     </div>

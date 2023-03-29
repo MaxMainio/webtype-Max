@@ -83,6 +83,10 @@ function displayPoem(poemIndex){
   updateIndex(author, poem, poemIndex);
 
   poemCount++
+
+  if (poemCount == 11){
+    poemCount = 0;
+  }
 }
 
 
@@ -146,47 +150,15 @@ appendBtn.addEventListener('click', event => {
   displayPoem(poemCount);
 });
 
+printBtn.addEventListener('click', event => {
+  window.print();
+});
 
-
-
-
-
-
-
-
-
-
-//   $("#append").click(function(){
-
-//     if( !$('header').hasClass('loading') ){
-//        // only display poem if JSON from API has fully loaded
-
-//        if(poemCount < 4){        
-//          poemCount ++; // increment poem index until 5
-//          displayPoem(poemCount);
-//        }else{
-//          getPoem(); // get new batch of poems
-//          poemCount = 0; // reset poem index
-//        }       
-//     }
-         
-//   });
-  
-//   getPoem();
-
-//   $("#block").click(function(){
-
-//     $('select').toggleClass('blockmode');
-
-//     if( !$('select').hasClass('blockmode') ){
-//       !$('select').removeClass('blockmode');
-//     }else{
-//       !$('select').addClass('blockmode');
-//     }
-         
-//   });
-
-// });
+blockBtn.addEventListener('click', event => {
+  document.querySelectorAll('select').forEach((element) => {
+    element.classList.toggle('blockmode');
+  });
+});
 
 
 
