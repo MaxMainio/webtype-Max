@@ -72,7 +72,13 @@ function displayPoem(poemIndex){
     }
     poemWrite = poemWrite + '</select>';
   }
-  
+
+  // var poemDiv = document.createElement('div');
+  // poemDiv.setAttribute('class', 'chain');
+  // poemDiv.setAttribute('data-poem', poem['title']);
+  // poemDiv.insertAdjacentHTML('beforeend', poemWrite);
+  // poemSpace.appendChild(poemDiv);
+
   poemSpace.insertAdjacentHTML("beforeend", poemWrite);
   updateIndex(author, poem, poemIndex);
 }
