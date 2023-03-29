@@ -5,11 +5,12 @@ window.onload = (event) => {
 }
 
 function getPoem() {
-  fetch('https://maxmainio.github.io/webtype-Max/projects/p4v3/sources/data.json')
-  .then((response) => response.json())
-  .then((json) => {
-    console.log(json);
-  });
+  fetch('https://maxmainio.github.io/sort-later-dev/library/json/data.json')
+  // fetch('https://maxmainio.github.io/webtype-Max/projects/p4v3/sources/data.json')
+    .then((response) => response.json())
+    .then((json) => {
+      console.log(json);
+    });
 }
 
 
