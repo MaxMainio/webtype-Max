@@ -1,7 +1,32 @@
 console.log("https://www.youtube.com/watch?v=NuAKnbIr6TE");
 
-let poemList = [];
-let poemCount = 0;
+window.onload = (event) => {
+  getPoem();
+}
+
+function getPoem() {
+  fetch('https://maxmainio.github.io/webtype-Max/projects/p4v3/sources/data.json')
+  .then((response) => response.json())
+  .then((json) => {
+    console.log(json);
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let poemList = [];
+// let poemCount = 0;
 
 
 // $(document).ready(function(){
