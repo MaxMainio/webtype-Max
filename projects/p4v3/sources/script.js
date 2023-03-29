@@ -104,7 +104,7 @@ function updateIndex(author, poem, poemIndex){
 
   var poemIndex = poemIndex + 1;
 
-  authorCard.innerHTML = '<p><a href="' + author['url'] + '" target="_blank">' + author['name'] + '</a></p><p>' + poemIndex + '</p>'
+  authorCard.innerHTML = '<p><a href="' + poem['url'] + '" target="_blank">' + poem['title'] + '</a>, <a href="' + author['url'] + '" target="_blank">' + author['name'] + '</a></p><p>' + poemIndex + '</p>'
 
   indexList.appendChild(authorCard);
   updateIndexList();
