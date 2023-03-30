@@ -76,14 +76,15 @@ function displayPoem(poemIndex){
   poemWrite = '';
 
   for (var i = 0; i < words.length; i++){
-    poemWrite = poemWrite + '<select data-poem-modal="' + poem['tag'] + indexNumber + '">';
+    poemWrite = poemWrite + '<select>';
+
     for (var j = 0; j < words[i].length; j++){
       poemWrite = poemWrite + '<option>' + words[i][j] + '</option>';
     }
     poemWrite = poemWrite + '</select>';
   }
 
-  poemSpace.insertAdjacentHTML("beforeend", '<div class="phrase">' + poemWrite + '</div>');
+  poemSpace.insertAdjacentHTML("beforeend", '<div class="phrase" data-poem-modal="' + poem['tag'] + indexNumber + '">' + poemWrite + '</div>');
   updateIndex(author, poem);
 
   poemCount++
@@ -123,18 +124,20 @@ function indexListHover(){
   document.querySelectorAll('[data-poem-index').forEach(item => {
     item.addEventListener('mouseenter', event => {
       var hovering = event.target.dataset.poemIndex;
-      
-      document.querySelectorAll('[data-poem-modal=' + hovering + ']').forEach((element) => {
-        element.classList.add('hovering');
-      });
+      var hoveringWords = document.querySelector('[data-poem-modal=' + hovering + ']').children;
+
+      for (var i = 0; i < hoveringWords.length; i++){
+        hoveringWords[i].classList.add('hovering');
+      }
     });
 
     item.addEventListener('mouseleave', event => {
       var hovering = event.target.dataset.poemIndex;
-      
-      document.querySelectorAll('[data-poem-modal=' + hovering + ']').forEach((element) => {
-        element.classList.remove('hovering');
-      });
+      var hoveringWords = document.querySelector('[data-poem-modal=' + hovering + ']').children;
+
+      for (var i = 0; i < hoveringWords.length; i++){
+        hoveringWords[i].classList.remove('hovering');
+      }
     });
   });
 };
@@ -160,12 +163,6 @@ blockBtn.addEventListener('click', event => {
   document.querySelectorAll('select').forEach((element) => {
     element.classList.toggle('blockmode');
   });
-});
-
-repeatBtn.addEventListener('click', event => {
-  var original = poemSpace.children;
-  var clone = original.cloneNode(true);
-  console.log(clone);
 });
 
 
