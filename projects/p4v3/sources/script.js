@@ -11,9 +11,11 @@ const randomizeBtn = document.getElementById('randomize');
 const printBtn = document.getElementById('print');
 const blockBtn = document.getElementById('block');
 const refreshBtn = document.getElementById('refresh');
+const repeatBtn = document.getElementById('repeat');
 
 var poemList = [];
 var poemCount = 0;
+var indexNumber = 1
 
 
 
@@ -35,6 +37,7 @@ window.onload = (event) => {
 
 
 
+/* JSON FETCH ----------------------------------------------------------------------------------------- */
 function getPoem() {
   fetch('https://maxmainio.github.io/webtype-Max/projects/p4v3/sources/data.json')
     .then((response) => response.json())
@@ -56,6 +59,7 @@ function getPoem() {
 
 
 
+/* POPULATE MAIN WITH POEMS --------------------------------------------------------------------------- */
 function displayPoem(poemIndex){
   let poem = poemList[poemIndex];
 
@@ -72,19 +76,20 @@ function displayPoem(poemIndex){
   poemWrite = '';
 
   for (var i = 0; i < words.length; i++){
-    poemWrite = poemWrite + '<select data-poem-modal="' + poem['tag'] + '">';
+    poemWrite = poemWrite + '<select data-poem-modal="' + poem['tag'] + indexNumber + '">';
     for (var j = 0; j < words[i].length; j++){
       poemWrite = poemWrite + '<option>' + words[i][j] + '</option>';
     }
     poemWrite = poemWrite + '</select>';
   }
 
-  poemSpace.insertAdjacentHTML("beforeend", poemWrite);
-  updateIndex(author, poem, poemIndex);
+  poemSpace.insertAdjacentHTML("beforeend", '<div class="phrase">' + poemWrite + '</div>');
+  updateIndex(author, poem);
 
   poemCount++
 
-  if (poemCount == 11){
+  if (poemCount == poemList.length){
+    shuffle(poemList);
     poemCount = 0;
   }
 }
@@ -97,28 +102,24 @@ function displayPoem(poemIndex){
 
 
 
-function updateIndex(author, poem, poemIndex){
+/* INDEX SECTION -------------------------------------------------------------------------------------- */
+function updateIndex(author, poem){
   var authorCard = document.createElement('div');
   authorCard.setAttribute('class', 'author');
-  authorCard.setAttribute('data-poem-index', poem['tag']);
+  authorCard.setAttribute('data-poem-index', poem['tag'] + indexNumber);
 
-  var poemIndex = poemIndex + 1;
+  authorCard.innerHTML = '<p><a href="' + poem['url'] + '" target="_blank">' + poem['title'] + '</a>, <a href="' + author['url'] + '" target="_blank">' + author['name'] + '</a></p><p>' + indexNumber + '</p>'
 
-  authorCard.innerHTML = '<p><a href="' + poem['url'] + '" target="_blank">' + poem['title'] + '</a>, <a href="' + author['url'] + '" target="_blank">' + author['name'] + '</a></p><p>' + poemIndex + '</p>'
-
+  indexNumber ++;
   indexList.appendChild(authorCard);
-  updateIndexList();
+  indexListHover();
 }
 
 
 
 
 
-
-
-
-
-function updateIndexList(){
+function indexListHover(){
   document.querySelectorAll('[data-poem-index').forEach(item => {
     item.addEventListener('mouseenter', event => {
       var hovering = event.target.dataset.poemIndex;
@@ -146,6 +147,7 @@ function updateIndexList(){
 
 
 
+/* BUTTONS -------------------------------------------------------------------------------------------- */
 appendBtn.addEventListener('click', event => {
   displayPoem(poemCount);
 });
@@ -160,6 +162,11 @@ blockBtn.addEventListener('click', event => {
   });
 });
 
+repeatBtn.addEventListener('click', event => {
+  var original = poemSpace.children;
+  var clone = original.cloneNode(true);
+  console.log(clone);
+});
 
 
 
@@ -168,6 +175,8 @@ blockBtn.addEventListener('click', event => {
 
 
 
+
+/* ARRAY SHUFFLER ------------------------------------------------------------------------------------- */
 function shuffle(array) {
   let currentIndex = array.length,  randomIndex;
 

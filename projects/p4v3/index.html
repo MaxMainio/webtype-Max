@@ -14,12 +14,19 @@
 
     <main id="poem-space"></main>
 
-    <div class="interactive">
+    <div id="context" class="interactive">
       <h1>about <i>Generative?</i> Poems</h1>
       <p>
-        <i>Generative?</i> Poems is an experimental, <i>work in progress</i>, website that pulls random poems from <a href="https://www.poemist.com/" target="_blank">Poemist</a> via the <a href="https://poemist.github.io/poemist-apidoc/" target="_blank">Poemist API</a>.
-        <br>It seperates each poem by the author's line breaks and creates drop down menus for each with, the selectable options for each drop down menu are the seperated words from each line of the poem.
-        <br>In the column to the right of this is listed all of the poems that are displayed above. In the right most column are buttons that allow you to interact with the <i>Generative?</i> Poem.
+        <i>Generative?</i> Poems is an ongoing experimental website that sources random poems from <a href="https://www.poemist.com/" target="_blank">Poemist</a> by utilizing the <a href="https://poemist.github.io/poemist-apidoc/" target="_blank">Poemist API</a>.
+      </p>
+      <p>
+        Each poem is seperated by sentance into individual drop-down menus, taking into consideration the poet's original use of punctuation and line breaks.
+      </p>
+      <p>
+        As the poem space above populates with text, the middle column here in the user input section will keep track of the poems that have been added. By clicking on the poem title, you can read the original poem in it's entirety, or, you can access the author's biography by clicking on their name. Hovering over the entries in the list will highlight where they appear in the poem space above.
+      </p>
+      <p>
+        The buttons in the far right column allow you to interact with the poems above.
       </p>
     </div>
 
@@ -31,11 +38,12 @@
     </div>
 
     <div class="interactive">
-      <button type="button" id="append">append</button>
-      <button type="button" id="randomize">randomize</button>
-      <button type="button" id="print">print</button>
-      <button type="button" id="block">block</button>
-      <button type="button" id="refresh" onClick="window.location.reload();">refresh</button>
+      <button type="button" id="append" title="Append another random poem to the end of the last poem">append</button>
+      <button type="button" id="block" title="convert the text above to a collection of black boxes">block</button>
+      <button type="button" id="print" title="Export the generated poem above as a print ready PDF">print</button>
+      <button type="button" id="randomize" title="Adding soon..." style="cursor: not-allowed;">randomize</button>
+      <button type="button" id="refresh" title="refresh the poem space above" onClick="window.location.reload();">refresh</button>
+      <button type="button" id="repeat" title="Adding soon...">repeat</button>
     </div>
   </body>
 </html>

@@ -70,12 +70,28 @@ main{
     overflow: scroll;
 }
 
+.phrase{
+    display: inline;
+}
+
 select{
     cursor: pointer;
 }
 
 .hovering{
     background-color: var(--darker-white);
+}
+
+
+
+
+
+#context p{
+    text-indent: 2rem;
+}
+
+#context p:nth-child(2){
+    text-indent: 0;
 }
 
 
